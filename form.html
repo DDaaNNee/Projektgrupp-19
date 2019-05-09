@@ -18,6 +18,7 @@
     <a class ="active" href="Form.html">Form</a>
     <a href="Process.html">Process</a>
     <a href="Process.php">Process (Bara PHP kod)</a>
+    <a href="Index.php">Index (Bara PHP kod)</a>
   </div>
 
       <h1>Registreringsformulär</h1> <!-- Ändra &#160; till något snyggare -->
@@ -27,6 +28,15 @@
         <h3>E-mail: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="email" value=""/></h3>
         <h3>Telefonnummer:  &nbsp&nbsp<input type="text" name="mobilnummer" value=""/></h3>
         <input type="submit" id="info"/>
+      </form>
+
+      <form action="process.php" method="post">
+        <h3>Förnamn: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="förnamn" value=""/></h3>
+        <h3>Efternamn: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="efternamn" value=""/></h3>
+        <h3>E-mail: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="email" value=""/></h3>
+        <h3>Telefonnummer:  &nbsp&nbsp<input type="text" name="mobilnummer" value=""/></h3>
+        <input type="submit" name="registrera" value="Spara"></h3>
+
       </form>
         <script>
           function kolla(){
