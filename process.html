@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<?php
+  $namnet = "";
+  if (isset($_GET["namn"])) {
+    $namnet = $_GET["namn"];
+
+    addToDatabase($namnet);
+  }
+?>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css.css">
+  </head>
+  <body>
+    <!--<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Form.html">Form</a></li>
+      <li><a class ="active" href="Process.html">Process</a></li>
+      <li><a href="Process.php">Process (Bara PHP kod)</a></li>
+    </ul>-->
+    <div class="topnavigation">
+    <a href="index.html">Home</a>
+    <a href="Form.html">Form</a>
+    <a class ="active" href="Process.html">Process</a>
+    <a href="Process.php">Process (Bara PHP kod)</a>
+  </div>
+</body>
+</html>
+<?php
+function addToDatabase($namn){
+
+}
+ ?>
