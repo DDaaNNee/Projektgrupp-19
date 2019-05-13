@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -7,6 +6,7 @@
   <body>
 
 <?php
+
   $dbServer = "dbtrain.im.uu.se";
   $username = "dbtrain_890";
   $password = "jrylmp";
@@ -14,14 +14,15 @@
 
 
   $conn = new mysqli($dbServer, $username, $password, $dbname) or die
-  ("något gick fel: " . $conn->connect_error);
+  ("något gick fel: ". $conn -> error);
+
 
   $sql = "SELECT ID, Förnamn, Efternamn, E-mail, Telefonnummer FROM Användare";
-  $resultat = mysqli_query($conn, $sql);
+  $result = $conn->query($sql);
 
-  if (mysqli_num_rows($resultat) > 0) {
-    while ($row = mysqli_fetch_assoc($resultat)) {
-      echo "ID: " . $row["ID"]. " - Förnamn: " . $row["Förnamn"] . "Efternamn :" . $row["Efternamn"] . "E-mail: " . $row["Email"] ."Telefonnummer: " . $row["Telefonnummer"] . "<br>";
+  if ($result->num_rows > 0) {
+    while ($row = $result -> fetch_assoc()) {
+      echo "<br> ID: " . $row["ID"]. " - Förnamn: " . $row["Förnamn"] . "Efternamn :" . $row["Efternamn"] . "E-mail: " . $row["Email"] ."Telefonnummer: " . $row["Telefonnummer"] . "<br>";
     }
   }
   else {

@@ -1,0 +1,27 @@
+Problem som finns just nu / Vad som behöver göras:
+
+Sök-knappen ligger över sök-formen, vilket skymmer den text som användaren skriver in
+
+Sök-knappen har ingen funktionalitet implementerad
+
+Topbar finns bara på index.html och inte på resten av sidorna
+
+Bilderna på index-sidan rullar inte kontinuerligt
+
+Bilderna på index-sidan ska öppnas som en popup istället för att referera till platsen där bilden ligger,
+dvs att man ska stanna kvar på index.html istället för att navigera till "http://localhost/projektgrupp19/Bilder/bgX.jpg"
+
+Ikon för kundvagn saknas
+
+Logo för sidan saknas
+
+Input-formen på "form.html" ligger gömda
+
+Process.html innehåller inget
+
+Kundvagn.html innehåller inget
+
+"Notice: Trying to get property of non-object in \\FILER.EKONOMIKUM.UU.SE\LABBWEBB\Projektgrupp19\process.php on line 23 0 results" - Error när man försöker connecta till databasen
+
+
+Idéer om vad som kan göras:
