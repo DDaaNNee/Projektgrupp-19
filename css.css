@@ -91,15 +91,15 @@ li a.active{
 
 .topnavigation a.active {
   background-color: #2e3cdb;
-  text-decoration: underline;
   color: white;
 }
 
-input {
+/*input {
   margin-top: 20px;
   position: absolute;
   margin-left: 55%
-}
+}*/
+
 .cartimage{
   margin-left: 92%;
   margin-top: 10px;

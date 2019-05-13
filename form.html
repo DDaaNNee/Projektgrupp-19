@@ -21,13 +21,13 @@
     <a href="Index.php">Index (Bara PHP kod)</a>
   </div>
 
-      <h1>Registreringsformulär</h1> <!-- Ändra &#160; till något snyggare -->
-      <form name="form1" method="GET" action="form.html" onsubmit="return kolla()">
-        <h3>Förnamn: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="förnamn" value="" id="förnamn"/></h3>
-        <h3>Efternamn: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="efternamn" value="" id="efternamn"/></h3>
-        <h3>E-mail: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="e-mail" value="" id="e-mail"/></h3>
-        <h3>Telefonnummer:  &nbsp&nbsp<input type="text" name="mobilnummer" value="" id="mobilnummer"/></h3>
-        <h3><input type="submit" id="info"/></h3>
+      <h1>Registreringsformulär</h1>
+      <form action="form.php" method="post">
+        <h3>Förnamn: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="fornamn"></h3>
+        <h3>Efternamn: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="efternamn"></h3>
+        <h3>E-mail: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="email"/></h3>
+        <h3>Telefonnummer:  &nbsp&nbsp<input type="text" name="mobilnummer"></h3>
+        <h3><input type="submit" value="submit" name="submit"></h3>
       </form>
 
         <script>
