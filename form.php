@@ -12,6 +12,11 @@ if (!$conn) {
 
 echo "Uppkopplad!";
 
+$fornamn = $_POST['fornamn'];
+$efternamn = $_POST['efternamn'];
+$email = $_POST['email'];
+$telefonnummer = $_POST['mobilnummer'];
+
 $query = "INSERT INTO Users(Fornamn, Efternamn, Email, Telefonnummer) VALUES ('$fornamn', '$efternamn', '$email', '$telefonnummer')";
 
 if (mysqli_query($conn, $query)) {
@@ -23,10 +28,6 @@ else {
 
 mysqli_close($conn);
 
-$fornamn = $_POST['fornamn'];
-$efternamn = $_POST['efternamn'];
-$email = $_POST['email'];
-$telefonnummer = $_POST['mobilnummer'];
 
 echo "Skickad info: <br>";
 echo "Förnamn: $fornamn<br>";
