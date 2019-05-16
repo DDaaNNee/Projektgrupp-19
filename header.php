@@ -1,24 +1,23 @@
-<?php
-// Fil som innehåller navigationsbaren som kommer att användas på alla sidor.
-<div class="topbar">
-    <a class ="active" href="index.html"></a>
-    <form class="test" action="index.html" method="post" href="">
-      <input type="image" name="" value="">
-      <input type="text" name="" value="">
-      <input type="submit" name="Sök" value="Sök">
-    </form>
-    <form class="cartimage" action="index.html" method="post">
-      <!--<a href="kundvagn.html"><img src="Bilder/cart.png" alt="Cart" width="15px" height="15px"> -->
-    </form>
-  </div>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css.css">
+  </head>
+  <body>
+    <div id="index_topbar">
+    </div>
+    <div id="index_navbar">
+    </div>
 
-<div class="topnavigation">
-  <a class ="active" href="index.html">Home</a>
-  <a href="Form.html">Form</a>
-  <a href="Process.html">Process</a>
-  <a href="Process.php">Process (Bara PHP kod)</a>
-  <a href="Index.php">Index (Bara PHP kod)</a>
-  <a href="Kundvagn.html">Kundvagn</a>
-</div>
-
-?>
+    <script>
+    $(function(){
+      $("#index_topbar").load("topbar.html");
+    });
+    $(function(){
+      $("#index_navbar").load("navbar.html");
+    });
+    </script>
+  </body>
+</html>

@@ -4,15 +4,23 @@
     <meta charset="utf-8">
     <title>Registreringsformulär</title>
     <link rel="stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   </head>
   <body>
+    <div id="index_topbar">
+    </div>
+    <div id="index_navbar">
+    </div>
 
-    <div class="topnavigation">
-    <a href="index.html">Home</a>
-    <a class ="active" href="Form.html">Form</a>
-    <a href="Process.html">Process</a>
-    <a href="Process.php">Process (Bara PHP kod)</a>
-    <a href="Index.php">Index (Bara PHP kod)</a>
+    <script>
+    $(function(){
+      $("#index_topbar").load("topbar.html");
+    });
+    $(function(){
+      $("#index_navbar").load("navbar.html");
+    });
+    </script>
+
   </div>
 
       <h1>Registreringsformulär</h1>

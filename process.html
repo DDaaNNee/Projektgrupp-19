@@ -4,14 +4,22 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   </head>
   <body>
-    <div class="topnavigation">
-    <a href="index.html">Home</a>
-    <a href="Form.html">Form</a>
-    <a class ="active" href="Process.html">Process</a>
-    <a href="Process.php">Process (Bara PHP kod)</a>
-    <a href="Index.php">Index (Bara PHP kod)</a>
+    <div id="index_topbar">
+    </div>
+    <div id="index_navbar">
+    </div>
+
+    <script>
+    $(function(){
+      $("#index_topbar").load("topbar.html");
+    });
+    $(function(){
+      $("#index_navbar").load("navbar.html");
+    });
+    </script>
   </div>
 </body>
 </html>
