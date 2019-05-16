@@ -9,16 +9,10 @@
 
 <body>
 
-  <!--<ul> *Alternativ till "topnavigation-lösningen under"*
-    <li><a class ="active" href="index.html">Home</a></li>
-    <li><a href="Form.html">Form</a></li>
-    <li><a href="Process.html">Process</a></li>
-    <li><a href="Process.php">Process (Bara PHP kod)</a></li>
-  </ul>-->
-
   <div class="topbar">
     <a class ="active" href="index.html"></a>
-    <form class="test" action="index.html" method="post">
+    <form class="test" action="index.html" method="post" href="">
+      <input type="image" name="" value="">
       <input type="text" name="" value="">
       <input type="submit" name="Sök" value="Sök">
     </form>
@@ -57,32 +51,6 @@
 <a href="Bilder/monster-drink-wallpaper2.jpg"><img src="Bilder/monster-drink-wallpaper2.jpg" width="180" height="120" alt="monster2">
 </marquee>
 
-<img id="bg1" src="Bilder/bg1.jpg" alt="Tea" style="width:20%;max-width:300px">
-<div id="myModal" class="modal">
-<span class="close">X</span>
-<img class="modal-content" id="Bilder/bg1.jpg" src="" alt="">
-<div id="caption">
-</div>
-</div>
-
-<script>
-var modal = document.getElementById('myModal');
-
-var img = document.getElementById('bg1');
-var modalImg = document.getElementById("Bilder/bg1.jpg");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-</script>
 
 <!--<script> *Kommenterad pga att slippa trycka OK under utvecklingsfasen*
 if (confirm('Är du över 15 år gammal?')) {
