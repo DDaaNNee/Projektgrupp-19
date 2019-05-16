@@ -1,6 +1,6 @@
 <?php
+include 'header.php';
 include 'process.php';
-include_once ('header.php');
 
 echo "Uppkopplad! <br>";
 
