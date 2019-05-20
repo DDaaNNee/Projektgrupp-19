@@ -21,12 +21,6 @@ h3 {
   text-shadow: 2px 2px 2px black;
   font: 15px arial, sans-serif;
 }
-h10 {
-  text-align: center;
-  color:white;
-  text-shadow: 2px 2px 2px black;
-  font: 15px arial, sans-serif;
-}
 
 .topbar{
   overflow:hidden;
@@ -68,9 +62,6 @@ h10 {
   margin-left: 55%
 }*/
 
-.sökruta {
-  margin-right: -200px;
-}
 
 #bg1{
   border-radius: 5px;
