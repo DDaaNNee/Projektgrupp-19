@@ -22,9 +22,38 @@ h3 {
   font: 15px arial, sans-serif;
 }
 
-.topbar{
+h5{
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font: 15px arial, sans-serif;
+}
+
+#topbar{
   overflow:hidden;
   background-color: #424242;
+  height: 40px;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.ikon {
+  position: relative;
+  margin-left: 5%;
+  top: -28px;
+}
+
+.sökruta {
+  position: relative;
+  margin-left: 45%;
+  top: -79px;
+}
+
+.kundvagn{
+  position: relative;
+  margin-left: 95%;
+  top: -105px;
 }
 
 .topnavigation {
