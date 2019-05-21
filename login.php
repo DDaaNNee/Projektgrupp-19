@@ -2,7 +2,8 @@
 <html>
 
 <head>
-
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
@@ -16,12 +17,9 @@
 
 <script>
 
+
 </script>
 </body>
-
-
-
-
 
 
 </html>
