@@ -91,7 +91,6 @@ h5{
   color: white;
 }
 
-
 #bg1{
   border-radius: 5px;
   cursor:pointer;
@@ -103,7 +102,8 @@ h5{
 }
 
 @media only screen and (max-width:850px){
-  .topnavigation {position: relative; width: 120px;}
+  .topnavigation {position: relative; width: 120px; display: grid;}
+  #topbar{background-color: #333;}
   h1 {position: absolute; top: 90px; margin-left: 190px;}
   h2 {position: absolute; top: 150px; margin-left: 205px;}
 }
