@@ -50,10 +50,15 @@ h5{
   top: -79px;
 }
 
+.mittkonto {
+  position: relative;
+  margin-left: 90%;
+  top:-105px;
+}
 .kundvagn{
   position: relative;
-  margin-left: 95%;
-  top: -105px;
+  margin-left: 94%;
+  top: -140px;
 }
 
 .topnavigation {
