@@ -1,10 +1,5 @@
 html{
-  /*background: url(Bilder/bg3.jpg) no-repeat center center fixed;
-  background-size: cover; */
   background-color: #424242;
-}
-body {
-  /*background-color: 0; */
 }
 
 h1 {
@@ -27,12 +22,43 @@ h3 {
   font: 15px arial, sans-serif;
 }
 
-.topbar{
+h5{
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font: 15px arial, sans-serif;
+}
+
+#topbar{
+  overflow:hidden;
   background-color: #424242;
+  height: 40px;
   margin-top: -8px;
   margin-left: -8px;
-  margin-right: -1%;
-  height: 60px;
+  margin-right: -8px;
+}
+
+.ikon {
+  position: relative;
+  margin-left: 5%;
+  top: -28px;
+}
+
+.sökruta {
+  position: relative;
+  margin-left: 45%;
+  top: -79px;
+}
+
+.mittkonto {
+  position: relative;
+  margin-left: 90%;
+  top:-105px;
+}
+.kundvagn{
+  position: relative;
+  margin-left: 94%;
+  top: -140px;
 }
 
 .topnavigation {
@@ -41,8 +67,8 @@ h3 {
   overflow: hidden;
   text-align: center;
   display: block;
-  margin-left: -1%;
-  margin-right: -1%;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .topnavigation a {
@@ -70,10 +96,6 @@ h3 {
   margin-left: 55%
 }*/
 
-.cartimage{
-  margin-left: 92%;
-  margin-top: 10px;
-}
 
 #bg1{
   border-radius: 5px;

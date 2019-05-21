@@ -2,16 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link rel="stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   </head>
   <body>
-    <div class="topnavigation">
-    <a href="index.html">Home</a>
-    <a href="Form.html">Form</a>
-    <a class ="active" href="Process.html">Process</a>
-    <a href="Process.php">Process (Bara PHP kod)</a>
-    <a href="Index.php">Index (Bara PHP kod)</a>
-  </div>
+    <div id="topbar">
+    </div>
+    <div id="navbar">
+    </div>
+
+    <script>
+    $(function(){
+      $("#topbar").load("topbar.html");
+    });
+    $(function(){
+      $("#navbar").load("navbar.html");
+    });
+    </script>
 </body>
 </html>
