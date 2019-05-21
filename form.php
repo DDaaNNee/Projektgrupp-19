@@ -28,12 +28,5 @@ else {
 
 mysqli_close($conn);
 
-
-echo "Skickad info: <br>";
-echo "Förnamn: $fornamn<br>";
-echo "Efternamn: $efternamn<br>";
-echo "E-mail: $email<br>";
-echo "Telefonnummer: $telefonnummer<br>";
-
-header('Location: index.php'); 
+header('Location: index.php');
  ?>

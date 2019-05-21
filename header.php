@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="css.css">
   </head>
   <body>
-    <div id="index_topbar">
+    <div id="topbar">
     </div>
-    <div id="index_navbar">
+    <div id="navbar">
     </div>
 
     <script>
     $(function(){
-      $("#index_topbar").load("topbar.html");
+      $("#topbar").load("topbar.html");
     });
     $(function(){
-      $("#index_navbar").load("navbar.html");
+      $("#navbar").load("navbar.html");
     });
     </script>
   </body>
