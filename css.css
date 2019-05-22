@@ -21,6 +21,12 @@ h3 {
   text-shadow: 2px 2px 2px black;
   font: 15px arial, sans-serif;
 }
+h4{
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font: 15px arial, sans-serif;
+}
 
 h5{
   text-align: center;
@@ -128,7 +134,18 @@ h5{
   float: right;
   font-size: 28px;
   font-weight; bold;
-  
+}
+
+.registreringsformulär{
+    padding-left: 20%;
+}
+
+input[name=test] {
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+}
+
   @media only screen and (max-width:850px){
     .topnavigation {position: relative; width: 120px; display: grid;}
     #topbar{background-color: #333;}
