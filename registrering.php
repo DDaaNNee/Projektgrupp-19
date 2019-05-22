@@ -2,25 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Registreringsformulär</title>
     <link rel="stylesheet" href="css.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <?php include 'resources/php/bars.php' ?>
   </head>
   <body>
-    <div id="topbar">
-    </div>
-    <div id="navbar">
-    </div>
-
-    <script>
-    $(function(){
-      $("#topbar").load("resources/htmlsupport/topbar.html");
-    });
-    $(function(){
-      $("#navbar").load("resources/htmlsupport/navbar.html");
-    });
-    </script>
 
     <h1>Registreringsformulär<hr></h1> <!-- Använd table eller divar -->
     <form action="registrering.php" method="post">
@@ -40,7 +28,7 @@
         <input type="tel" name="test" value="" placeholder="Skriv in ditt telefonnummer" required pattern="[0][7][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"><br>
         <label for="">Jag accepterar användarvillkoren: </label>
         <input type="checkbox" value="" name="accept" required> <br><br>
-        <input type="submit" value="Registrera" name="test">
+        <input type="submit" value="Registrera" name="regbox">
         </h4>
       </div>
       <hr>

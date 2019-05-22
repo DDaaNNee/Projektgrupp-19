@@ -1,5 +1,5 @@
 <div class="ikon">
-  <a href="index.html"><img src="resources/img/ENRG-TRANSP.png" alt="Placeholder" width="85px" height="85px">
+  <a href="index.php"><img src="resources/img/ENRG-TRANSP.png" alt="Placeholder" width="85px" height="85px">
 </div>
 
 <div class="sökruta">
@@ -12,5 +12,5 @@
 </div>
 
 <div class="kundvagn">
-<a href="kundvagn.html"><img src="resources/img/cart.png" alt="Kundvagn" width="27px" height="27px">
+<a href="kundvagn.php"><img src="resources/img/cart.png" alt="Kundvagn" width="27px" height="27px">
 </div>

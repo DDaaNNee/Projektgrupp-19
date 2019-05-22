@@ -2,25 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
     <link rel="stylesheet" href="css.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <?php include 'resources/php/bars.php' ?>
   </head>
   <body>
-    <div id="topbar">
-    </div>
-    <div id="navbar">
-    </div>
-
-    <script>
-    $(function(){
-      $("#topbar").load("resources/htmlsupport/topbar.html");
-    });
-    $(function(){
-      $("#navbar").load("resources/htmlsupport/navbar.html");
-    });
-    </script>
 
     <h1> "Din kundvagn" </h1>
     <div id="klarnaBet" style="width:100%;height:400px;"></div>
