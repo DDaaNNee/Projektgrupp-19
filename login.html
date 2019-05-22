@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logga in</title>
+  <link rel="stylesheet" href="css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
+  </head>
+  <body>
+    <div id="topbar">
+    </div>
+    <div id="navbar">
+    </div>
+    <script>
+      $(function(){
+        $("#topbar").load("resources/htmlsupport/topbar.html");
+      });
+      $(function(){
+        $("#navbar").load("resources/htmlsupport/navbar.html");
+      });
+    </script>
+
+    <form>
+        Användarnamn: <br>
+        <input type="text" name="userName"> <br>
+        Lösenord: <br>
+        <input type="text" name="password"> <br>
+        <h4><input type="submit" value="submit" name="submit"></h4>
+    </form>
+    <div id="resources/htmlsupport/topbar">
+    </div>
+    <div id="resources/htmlsupport/navbar">
+    </div>
+    <script>
+      $(function(){
+        $("#topbar").load("resources/htmlsupport/topbar.html");
+      });
+      $(function(){
+        $("#navbar").load("resources/htmlsupport/navbar.html");
+      });
+    </script>
+  </body>
+
+
+</html>
