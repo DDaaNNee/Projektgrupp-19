@@ -15,17 +15,17 @@
       <div class="registreringsformulär">
         <h4>
         <label for="">Förnamn: </label><br>
-        <input type="text" name="test" value="" placeholder="Skriv ditt förnamn" required><br>
+        <input type="text" name="fornamn" value="" placeholder="Skriv ditt förnamn" required><br>
         <label for="">Efternamn: </label><br>
-        <input type="text" name="test" value="" placeholder="Skriv ditt efternamn" required><br>
+        <input type="text" name="efternamn" value="" placeholder="Skriv ditt efternamn" required><br>
         <label for="">E-mail: </label><br>
-        <input type="email" name="test" value="" placeholder="Skriv in din e-post" required><br>
+        <input type="email" name="email" value="" placeholder="Skriv in din e-post" required><br>
         <label for="">Lösenord: </label><br>
-        <input type="password" name="test" value="" placeholder="Skriv in ditt lösernord" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> <br>
+        <input type="password" name="losenord" value="" placeholder="Skriv in ditt lösernord" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> <br>
         <label for="">Adress: </label><br>
-        <input type="text" name="test" value="" placeholder="Skriv in din adress" required><br>
+        <input type="text" name="adress" value="" placeholder="Skriv in din adress" required><br>
         <label for="">Telefonnummer: </label><br>
-        <input type="tel" name="test" value="" placeholder="Skriv in ditt telefonnummer" required pattern="[0][7][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"><br>
+        <input type="tel" name="telefonnummer" value="" placeholder="Skriv in ditt telefonnummer" required pattern="[0][7][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"><br>
         <label for="">Jag accepterar användarvillkoren: </label>
         <input type="checkbox" value="" name="accept" required> <br><br>
         <input type="submit" value="Registrera" name="regbox">
@@ -56,12 +56,16 @@
 
     echo "Uppkopplad! <br>";
 
+    mysqli_set_charset($conn,"utf8");
+
     $fornamn = $_POST['fornamn'];
     $efternamn = $_POST['efternamn'];
     $email = $_POST['email'];
-    $telefonnummer = $_POST['mobilnummer'];
+    $losenord = $_POST['losenord'];
+    $adress = $_POST['adress'];
+    $telefonnummer = $_POST['telefonnummer'];
 
-    $query = "INSERT INTO Users(Fornamn, Efternamn, Email, Telefonnummer) VALUES ('$fornamn', '$efternamn', '$email', '$telefonnummer')";
+    $query = "INSERT INTO Users(Fornamn, Efternamn, Email, Losenord, Adress, Telefonnummer) VALUES ('$fornamn', '$efternamn', '$email', '$losenord', '$adress', '$telefonnummer')";
 
       if (mysqli_query($conn, $query)) {
           echo "Adderad information till databasen! <br>";
@@ -71,17 +75,6 @@
       }
     mysqli_close($conn);
   }
-
      ?>
-        <script>
-          function kolla(){
-            if(document.form1.förnamn.value == "" || document.form1.efternamn.value == "" || document.form1.email.value == "" || document.form1.mobilnummer.value == ""){
-            }
-            else{
-              document.form1.submit();
-            }
-          }
-
-        </script>
   </body>
 </html>

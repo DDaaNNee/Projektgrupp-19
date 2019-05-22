@@ -16,9 +16,6 @@
 <h1><b>Välkommen till ENRGbolaget!</b></h1>
 <h2><b>Din största återförsäljare av energidryck online!    <hr></b></h2>
 
-
-
-
 <!--<script> /*Kommenterad pga att slippa trycka OK under utvecklingsfasen**/
 if (confirm('Är du över 15 år gammal?')) {
 <input type="date">
@@ -28,7 +25,8 @@ else {
     window.location = "http://google.com"
 }
 </script> -->
-</div>
 <?php /*include 'resources/htmlsupport/carousel.php';*/ ?>
+<?php include 'resources/htmlsupport/slideshow.php' ?>
+<hr>
 </body>
  </html>

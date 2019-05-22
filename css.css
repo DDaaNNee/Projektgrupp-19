@@ -102,7 +102,7 @@ h5{
     padding-left: 20%;
 }
 
-input[name=test] {
+input[name=fornamn], input[name=efternamn], input[name=email], input[name=losenord], input[name=adress], input[name=telefonnummer] {
   width: 80%;
   padding: 10px;
   margin: 5px 0 22px 0;
@@ -128,4 +128,21 @@ input[name=regbox]{
   @media only screen and (max-width:444px){
     h1 {position: absolute; top: 90px; margin-left: 190px;}
     h2 {position: absolute; top: 240px; margin-left: 205px;}
+}
+
+#slideshow {
+    position: relative;
+    margin: auto;
+    width: 600px;
+    height: 300px;
+    padding: 0px;
+    box-shadow: 0 0 7px rgba(0,0,0,1);
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
