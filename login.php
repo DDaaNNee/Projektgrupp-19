@@ -12,11 +12,20 @@ if (!$conn) {
 
 echo "Uppkopplad! <br>";
 
-$fornamn = $_POST['fornamn'];
-$efternamn = $_POST['efternamn'];
-$email = $_POST['email'];
-$telefonnummer = $_POST['mobilnummer'];
+$userName = $_POST['userName'];
+$password = $_POST['password'];
 
+$validation = "INSERT INTO Users(Fornamn, Efternamn, Email, Telefonnummer) VALUES ('$userName', 'password')";
 
+if (mysqli_query($conn, $validation==)) {
+    echo "Adderad information till databasen! <br>";
+}
+else {
+    echo "ERROR: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+mysqli_close($conn);
+
+header('Location: index.php');
 
 ?>
