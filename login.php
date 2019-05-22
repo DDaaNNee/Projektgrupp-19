@@ -13,11 +13,25 @@ if (!$conn) {
 echo "Uppkopplad! <br>";
 
 $userName = $_POST['userName'];
-$password = $_POST['password'];
+$password = $_POST['userPassword'];
 
-$validation = "INSERT INTO Users(Fornamn, Efternamn, Email, Telefonnummer) VALUES ('$userName', 'password')";
+$validation = "INSERT INTO TempUser('tempUser', 'tempPassword') VALUES ('$userName', 'userPassword')";
 
-if (mysqli_query($conn, $validation==)) {
+$selectQuery= "SELECT 'Email' AND 'Password' FROM 'Users'";
+
+$validating = if($validation==$selectQuery){
+return true;
+}
+else {
+    return false;
+}
+
+if($validation){
+
+}
+
+
+if (mysqli_query($conn, $validation) {
     echo "Adderad information till databasen! <br>";
 }
 else {
