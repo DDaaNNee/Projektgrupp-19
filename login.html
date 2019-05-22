@@ -16,12 +16,18 @@
         Lösenord: <br>
         <input type="text" name="password"> <br>
     </form>
-
-
-<script>
-
-
-</script>
+    <div id="resources/htmlsupport/topbar">
+    </div>
+    <div id="resources/htmlsupport/navbar">
+    </div>
+    <script>
+      $(function(){
+        $("#topbar").load("resources/htmlsupport/topbar.html");
+      });
+      $(function(){
+        $("#navbar").load("resources/htmlsupport/navbar.html");
+      });
+    </script>
 </body>
 
 
