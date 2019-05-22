@@ -10,6 +10,20 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
+  <div id="topbar">
+  </div>
+  <div id="navbar">
+  </div>
+
+  <script>
+  $(function(){
+    $("#topbar").load("resources/htmlsupport/topbar.html");
+  });
+  $(function(){
+    $("#navbar").load("resources/htmlsupport/navbar.html");
+  });
+  </script>
+  
     <form>
         Användarnamn: <br>
         <input type="text" name="userName"> <br>

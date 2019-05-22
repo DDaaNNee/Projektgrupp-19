@@ -62,13 +62,14 @@ h5{
 }
 
 .topnavigation {
+  position: sticky; /*TEST*/
   font: 15px arial, sans-serif;
   background-color: #333;
   overflow: hidden;
   text-align: center;
   display: block;
-  margin-left: -10px;
-  margin-right: -10px;
+  width: 110%;
+  margin-left: -8px;
 }
 
 .topnavigation a {
@@ -90,13 +91,6 @@ h5{
   color: white;
 }
 
-/*input {
-  margin-top: 20px;
-  position: absolute;
-  margin-left: 55%
-}*/
-
-
 #bg1{
   border-radius: 5px;
   cursor:pointer;
@@ -105,4 +99,21 @@ h5{
 
 #bg1:hover{
   opacity: 0,7;
+}
+
+@media only screen and (max-width:850px){
+  .topnavigation {position: relative; width: 120px; display: grid;}
+  #topbar{background-color: #333;}
+  h1 {position: absolute; top: 90px; margin-left: 190px;}
+  h2 {position: absolute; top: 150px; margin-left: 205px;}
+}
+
+@media only screen and (max-width:691px){
+  h1 {position: absolute; top: 90px; margin-left: 190px;}
+  h2 {position: absolute; top: 200px; margin-left: 205px;}
+}
+
+@media only screen and (max-width:444px){
+  h1 {position: absolute; top: 90px; margin-left: 190px;}
+  h2 {position: absolute; top: 240px; margin-left: 205px;}
 }
