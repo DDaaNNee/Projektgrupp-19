@@ -18,7 +18,8 @@ $password = $_POST['userPassword'];
 $validation = "INSERT INTO TempUser('tempUser', 'tempPassword') VALUES ('$userName', 'userPassword')";
 
 $selectQuery= "SELECT 'Email' AND 'Password' FROM 'Users'";
-
+//Under denna rad är det lite otydligt hur vi exakt ska göra, vi får eventuellt fråga Stuxberg
+//då vi måste använda oss av saltning och kan inte spara lösenorden i "plain text".
 $validating = if($validation==$selectQuery){
 return true;
 }
