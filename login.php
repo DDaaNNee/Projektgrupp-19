@@ -34,7 +34,7 @@ else{
     echo "Fel användarnamn eller lösenord";
 }
 
-
+/*
 if (mysqli_query($conn, $validation) {
     echo "Adderad information till databasen! <br>";
 }
@@ -43,7 +43,7 @@ else {
 }
 
 mysqli_close($conn);
-
+*/
 header('Location: index.php');
 
 ?>
