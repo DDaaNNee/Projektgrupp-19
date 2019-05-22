@@ -26,8 +26,11 @@ else {
     return false;
 }
 
-if($validation){
-
+if($validation==true){
+    //Här ska vi lägga in logg in information, vet inte riktigt hur vi ska göra det
+}
+else{
+    echo "Fel användarnamn eller lösenord";
 }
 
 
