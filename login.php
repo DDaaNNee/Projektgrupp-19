@@ -1,49 +1,44 @@
-<?php
-$dbServer = "dbtrain.im.uu.se";
-$username = "dbtrain_890";
-$password = "jrylmp";
-$dbname = "dbtrain_890";
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Logga in</title>
+  <link rel="stylesheet" href="resources/css/mastercss.css">
+  <link rel="stylesheet" href="resources/css/bars.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <?php include 'resources/support/bars.php' ?>
+  <?php include 'resources/support/dbconnect.php' ?>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
+  </head>
+  <body>
+    <h1>Logga in<hr></h1>
+    <form>
+      <div class="registreringsformulär">
+      <h4>
+        <label for="">E-mail: </label><br>
+        <input type="text" name="login_email" placeholder="Skriv in din e-mail" required autofocus> <br>
+        <label for="">Lösenord: </label><br>
+        <input type="password" name="login_password" placeholder="Skriv in ditt lösenord" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> <br>
+        <h4><input type="submit" value="Logga in" name="loggain"></h4>
+      </h4>
+      </div>
+    </form>
 
-$conn = new mysqli($dbServer, $username, $password, $dbname);
+    <?php
 
-if (!$conn) {
-     die("Det gick inte att ansluta! Error: ". mysqli_connect_error());
-}
 
-echo "Uppkopplad! <br>";
 
-$userName = $_POST['userName'];
-$password = $_POST['userPassword'];
 
-$validation = "INSERT INTO TempUser('tempUser', 'tempPassword') VALUES ('$userName', 'userPassword')";
 
-$selectQuery= "SELECT 'Email' AND 'Password' FROM 'Users'";
-//Under denna rad är det lite otydligt hur vi exakt ska göra, vi får eventuellt fråga Stuxberg
-//då vi måste använda oss av saltning och kan inte spara lösenorden i "plain text".
-$validating = if($validation==$selectQuery){
-return true;
-}
-else {
-    return false;
-}
 
-if($validation==true){
-    //Här ska vi lägga in logg in information, vet inte riktigt hur vi ska göra det
-}
-else{
-    echo "Fel användarnamn eller lösenord";
-}
 
-/*
-if (mysqli_query($conn, $validation) {
-    echo "Adderad information till databasen! <br>";
-}
-else {
-    echo "ERROR: " . $sql . "<br>" . mysqli_error($conn);
-}
 
-mysqli_close($conn);
-*/
-/*header('Location: index.php'); */
+    mysqli_close($conn); ?>
+  </body>
 
-?>
+
+</html>

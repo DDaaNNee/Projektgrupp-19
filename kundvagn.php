@@ -1,16 +1,18 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="resources/css/mastercss.css">
+    <link rel="stylesheet" href="resources/css/bars.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <?php include 'resources/php/bars.php' ?>
+    <?php include 'resources/support/bars.php' ?>
   </head>
   <body>
+    <h1>Din kundvagn<hr></h1>
 
-    <h1> "Din kundvagn" </h1>
     <div id="klarnaBet" style="width:100%;height:400px;"></div>
     <script>
       function myBet() {

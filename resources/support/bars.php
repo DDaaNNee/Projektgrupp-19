@@ -12,10 +12,10 @@
 
     <script>
     $(function(){
-      $("#topbar").load("resources/htmlsupport/topbar.php");
+      $("#topbar").load("resources/support/topbar.php");
     });
     $(function(){
-      $("#navbar").load("resources/htmlsupport/navbar.php");
+      $("#navbar").load("resources/support/navbar.php");
     });
     </script>
     <?php

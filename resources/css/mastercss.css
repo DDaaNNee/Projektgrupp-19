@@ -36,78 +36,13 @@ h5{
   font: 15px arial, sans-serif;
 }
 
-#topbar{
-  overflow:hidden;
-  background-color: #424242;
-  height: 40px;
-  margin-top: -8px;
-  margin-left: -8px;
-  margin-right: -8px;
-}
 
-.ikon {
-  position: relative;
-  margin-left: 5%;
-  top: -28px;
-}
-
-.sökruta {
-  position: relative;
-  margin-left: 45%;
-  top: -79px;
-}
-
-.mittkonto {
-  position: relative;
-  margin-left: 90%;
-  top:-105px;
-}
-.kundvagn{
-  position: relative;
-  margin-left: 94%;
-  top: -140px;
-}
-
-.topnavigation {
-  position: sticky; /*TEST*/
-  font: 15px arial, sans-serif;
-  background-color: #333;
-  overflow: hidden;
-  text-align: center;
-  display: block;
-  width: 110%;
-  margin-left: -8px;
-}
-
-.topnavigation a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px 25px;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.topnavigation a:hover {
-  background-color: #636363;
-  color: black;
-}
-
-.topnavigation a.active {
-  background-color: #2e3cdb;
-  color: white;
-}
-
-.registreringsformulär{
-    padding-left: 20%;
-}
-
-input[name=fornamn], input[name=efternamn], input[name=email], input[name=losenord], input[name=adress], input[name=telefonnummer] {
+input[name=fornamn], input[name=efternamn], input[name=email], input[name=losenord], input[name=adress], input[name=telefonnummer], input[name=login_email], input[name=login_password] {
   width: 80%;
   padding: 10px;
   margin: 5px 0 22px 0;
 }
-input[name=regbox]{
+input[name=regbox], input[name=loggain]{
   width: 83%;
   padding: 10px;
   margin: 5px 0 22px 0;
