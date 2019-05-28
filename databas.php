@@ -27,8 +27,8 @@
 
 
     if ($result->num_rows > 0) {
+      echo "<table border='1'>";
       while ($row = $result -> fetch_assoc()) {
-        echo "<table border='1'>";
         echo "<tr><td>ID</td><td>Förnamn</td><td>Efternamn</td><td>E-mail</td><td>Telefonnummer</td><tr>\n";
         echo "<tr><td>{$row["ID"]}</td><td>{$row["Fornamn"]}</td><td>{$row["Efternamn"]}</td><td>{$row["Email"]}</td><td>{$row["Telefonnummer"]}</td><tr>";
       }
