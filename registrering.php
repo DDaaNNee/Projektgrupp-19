@@ -46,8 +46,8 @@
 
     /*$fornamn = $_POST['fornamn'];
     $efternamn = $_POST['efternamn'];*/
-    $email = $_POST['email'];
-    $losenord = $_POST['losenord'];
+    $email = mysqli_real_escape_string($_POST['email']);
+    $losenord = mysqli_real_escape_string($_POST['losenord']);
     /*$adress = $_POST['adress'];
     $telefonnummer = $_POST['telefonnummer'];*/
 

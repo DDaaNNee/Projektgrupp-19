@@ -12,8 +12,8 @@ if (!$conn) {
 
 echo "Uppkopplad! <br>";
 
-$userName = $_POST['userName'];
-$password = $_POST['userPassword'];
+$userName = mysqli_real_escape_string($_POST['userName']);
+$password = mysqli_real_escape_string($_POST['userPassword']);
 
 $validation = "INSERT INTO TempUser('tempUser', 'tempPassword') VALUES ('$userName', 'userPassword')";
 
