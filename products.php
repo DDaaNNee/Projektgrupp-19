@@ -14,18 +14,21 @@
     <body>
      <!--     <img src="" alt="Gamingpaketet">  Här ska vi lägga till bild-->
         <form method="POST">
+            Klicka här för att börja prenumenera på Gamingpaketet <br>
             <input type="number" name="gamingpaket" required>
             <input type="submit" name="submitGaming" required>
         </form>
 
      <!--   <img src="" alt="Träningspaketet">  Här ska vi lägga till bild-->
         <form method="POST">
+            Klicka här för att börja prenumenera på Sportpaketet <br>
             <input type="number" name="sportpaket" required>
             <input type="submit" name="submitSport" required>
         </form>
 
       <!--    <img src="" alt="Extremsportspaketet"> Här ska vi lägga till bild-->
         <form method="POST">
+            Klicka här för att börja prenumenera på Extrempaketet <br>
             <input type="number" name="extremsportpaket" required>
             <input type="submit" name="submitExtrem" required>
         </form>
