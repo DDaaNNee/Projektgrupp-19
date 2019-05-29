@@ -21,5 +21,9 @@
     <div class="kundvagn">
     <a href="kundvagn.php"><img src="resources/img/cart.png" alt="Kundvagn" width="27px" height="27px">
     </div>
+
+    <div class="karta">
+    <a href="leaflet.php">
+    </div>
   </body>
 </html>
