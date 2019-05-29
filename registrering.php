@@ -61,6 +61,14 @@
       }
     mysqli_close($conn);
   }
+  $findemail = "SELECT Email FROM Anvandare WHERE Email = '$email'";
+  $resemail = mysqli_query($conn, $findemail);
+  $emailres = mysqli_num_rows($resemail);
+
+  if ($emailres != 0) {
+    echo"<script>alert('E-mailen finns redan')</script>";
+    echo"<script>location.href='registrering.php'</script>";
+    }
      ?>
   </body>
 </html>
