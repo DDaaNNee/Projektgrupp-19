@@ -1,33 +1,76 @@
-#topbar{
-  overflow:hidden;
-  background-color: #424242;
-  height: 40px;
-  margin-top: -8px;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
 .ikon {
   position: relative;
-  margin-left: 5%;
-  top: -28px;
+  height: 0px;
+}
+.ikon img{
+  position: relative;
+  top: 35px;
+  height: 100px;
+  width: 100px;
+  z-index: 1;
+}
+.ikon a{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top:-75px;
+  z-index: 1;
 }
 
 .sökruta {
+  top: 7px;
   position: relative;
-  margin-left: 45%;
-  top: -79px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
 }
 
 .mittkonto {
+  top: -21px;
   position: relative;
-  margin-left: 90%;
-  top:-105px;
+  text-align: right;
+  width: 100%;
+  height: 0px;
 }
-.kundvagn{
+.mittkonto img{
   position: relative;
-  margin-left: 94%;
-  top: -140px;
+  right: 20px;
+  height: 38px;
+  width: 38px;
+  z-index: 1;
+}
+
+.kundvagn{
+  top: -23px;
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 20px;
+}
+
+.kundvagn img{
+  position: relative;
+  height: 37px;
+  width: 37px;
+  z-index: 3;
+}
+
+.kundvagn a{
+  position: relative;
+  right: 70px;
+  height: 37px;
+  width: 37px;
+  z-index: 1;
+}
+
+.karta{
+  top: 50px;
+  position: relative;
+
+}
+
+.karta img{
+
 }
 
 .topnavigation {

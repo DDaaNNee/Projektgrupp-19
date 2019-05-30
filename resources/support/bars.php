@@ -5,21 +5,15 @@
     <title></title>
   </head>
   <body>
-    <div id="topbar">
-    </div>
-    <div id="navbar">
-    </div>
-
-    <script>
-    $(function(){
-      $("#topbar").load("resources/support/topbar.php");
-    });
-    $(function(){
-      $("#navbar").load("resources/support/navbar.php");
-    });
-    </script>
-    <?php
-
-     ?>
+  <?php
+  if (isset($_SESSION['inloggad']) && $_SESSION['inloggad'] == true){
+    include 'resources/support/topbar.php';
+    include 'resources/support/navbar_inloggad.php';
+  }
+  else{
+    include 'resources/support/topbar.php';
+    include 'resources/support/navbar_utloggad.php';
+  }
+  ?>
   </body>
 </html>

@@ -36,6 +36,10 @@ h5{
   font: 15px arial, sans-serif;
 }
 
+a{
+  color: white;
+}
+
 
 input[name=fornamn], input[name=efternamn], input[name=email], input[name=losenord], input[name=adress], input[name=telefonnummer], input[name=login_email], input[name=login_password] {
   width: 80%;
@@ -48,7 +52,7 @@ input[name=regbox], input[name=loggain]{
   margin: 5px 0 22px 0;
 }
 
-  @media only screen and (max-width:750px){
+  /*@media only screen and (max-width:750px){
     .topnavigation {position: relative; width: 120px; display: grid;}
     #topbar{background-color: #333;}
     h1 {position: absolute; top: 90px; margin-left: 190px;}
@@ -63,7 +67,7 @@ input[name=regbox], input[name=loggain]{
   @media only screen and (max-width:444px){
     h1 {position: absolute; top: 90px; margin-left: 190px;}
     h2 {position: absolute; top: 240px; margin-left: 205px;}
-}
+} */
 
 #slideshow {
     position: relative;

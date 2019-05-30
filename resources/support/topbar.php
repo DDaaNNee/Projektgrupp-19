@@ -6,7 +6,9 @@
   </head>
   <body>
     <div class="ikon">
-      <a href="index.php"><img src="resources/img/ENRG-TRANSP.png" alt="Placeholder" width="85px" height="85px">
+      <a href="index.php">
+        <img src="resources/img/ENRG-TRANSP.png" alt="Home">
+      </a>
     </div>
 
     <div class="sökruta">
@@ -14,16 +16,32 @@
       <input type="submit" name="Sök" value="Sök">
     </div>
 
-    <div class="mittkonto">
-      <a href="login.php"><img src="resources/img/mittkonto.png" alt="Mitt konto" width="32px" height="32px">
-    </div>
+    <?php if (isset($_SESSION['inloggad']) && $_SESSION['inloggad'] == true){
+            echo "<div class='mittkonto'>
+            <a href='minsida.php'>
+              <img src='resources/img/mittkonto.png' alt='Mitt konto'>
+            </a>
+          </div>";
+        }
+        else {
+          echo "<div class='mittkonto'>
+          <a href='login.php'>
+            <img src='resources/img/mittkonto.png' alt='Mitt konto'>
+          </a>
+        </div>";
+        }
+
+    ?>
 
     <div class="kundvagn">
-    <a href="kundvagn.php"><img src="resources/img/cart.png" alt="Kundvagn" width="27px" height="27px">
+      <a href="kundvagn.php">
+        <img src="resources/img/cart.png" alt="Kundvagn">
+      </a>
     </div>
 
     <div class="karta">
     <a href="leaflet.php">
+    </a>
     </div>
   </body>
 </html>

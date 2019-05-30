@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php require_once("resources/support/checksession.php"); ?>
 <!DOCTYPE html>
 <html>
     <head>
