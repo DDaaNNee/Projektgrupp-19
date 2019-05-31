@@ -10,7 +10,6 @@
       <a href='index.php'>Home</a>
       <a href='registrering.php'>Registrering</a>
       <a href='login.php'>Logga in</a>
-      <a href='kundvagn.php'>Kundvagn</a>
       </div>";
      ?>
 
