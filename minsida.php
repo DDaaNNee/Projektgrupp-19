@@ -49,7 +49,7 @@
          id: 'mapbox.streets',
          accessToken: 'pk.eyJ1IjoiZGRhYW5uZWUiLCJhIjoiY2p3YnZ2OHR4MG4wYzQzdDd5Nm5qb21seCJ9.1lvGsOKalK2t8ELMTGWS4Q'
        }).addTo(mymap);
-       
+
        var lager1Uppsala = L.marker([59.8598, 17.6345]).addTo(mymap);
        var lager2Lund = L.marker([55.701489, 13.186419]).addTo(mymap);
        var lager3Umeå = L.marker([63.828892, 20.258842]).addTo(mymap);
