@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <?php
+    include 'resources/support/dbconnect.php';
+    include 'resources/support/checksession.php';
+
+    $useremail = $_SESSION['user'];
+    $queryFornamn = "SELECT Fornamn FROM Anvandare WHERE Email = '$useremail'";
+    $queryEfternamn = "SELECT Efternamn FROM Anvandare WHERE Email = '$useremail'";
+    $queryAdress = "SELECT Adress FROM Anvandare WHERE Email = '$useremail'";
+    $queryTelefonnummer = "SELECT Fornamn FROM Anvandare WHERE Email = '$useremail'";
+
+    $resultFornamn = mysqli_query($conn, $queryFornamn) or die(mysqli_error($conn));
+    $resultEfternamn = mysqli_query($conn, $queryEfternamn) or die(mysqli_error($conn));
+    $resultAdress = mysqli_query($conn, $queryAdress) or die(mysqli_error($conn));
+    $resultTelefonnummer = mysqli_query($conn, $queryTelefonnummer) or die(mysqli_error($conn));
+
+    $rowFornamn = mysqli_fetch_row($resultFornamn);
+    $rowFornamn = $rowFornamn[0];
+    $rowEfternamn = mysqli_fetch_row($resultEfternamn);
+    $rowEfternamn = $rowEfternamn[0];
+    $rowAdress = mysqli_fetch_row($resultAdress);
+    $rowAdress = $rowAdress[0];
+    $rowTelefonnummer = mysqli_fetch_row($resultTelefonnummer);
+    $rowTelefonnummer = $rowTelefonnummer[0];
+
+
+    echo "<form class='registreringsformulär' method='post'>";
+    echo "<div class='addera_info'>";
+    echo "<h4>";
+
+    if (is_null($rowFornamn) == 'true') {
+      echo "<label for=''>Förnamn: </label><br>
+      <input type='text' name='fornamn' value='' placeholder='Skriv in ditt förnamn'><br>";
+    }
+    if (is_null($rowEfternamn) == 'true') {
+      echo "<label for=''>Efternamn: </label><br>
+      <input type='text' name='efternamn' value='' placeholder='Skriv in ditt efternamn'><br>";
+    }
+    if (is_null($rowAdress) == 'true') {
+      echo "<label for=''>Adress: </label><br>
+      <input type='text' name='adress' value='' placeholder='Skriv in din adress'><br>";
+    }
+    if (is_null($rowTelefonnummer) == 'true') {
+      echo "<label for=''>Telefonnummer: </label><br>
+      <input type='text' name='telefonnummer' value='' placeholder='Skriv in ditt telefonnummer'><br>";
+    }
+    if (is_null($rowFornamn) == 'true' || is_null($rowEfternamn) == 'true' || is_null($rowAdress) == 'true' || is_null($rowTelefonnummer) == 'true') {
+      echo "<input type='submit' name='skickainfo' value='Skicka'";
+      $fornamn = mysqli_real_escape_string($conn, $_POST['fornamn']);
+      $efternamn = mysqli_real_escape_string($conn, $_POST['efternamn']);
+      if (!empty()) {
+        // code...
+      }
+    }
+    echo "</h4>";
+    echo "</div>";
+    echo "</form>";
+    ?>
+  </body>
+</html>

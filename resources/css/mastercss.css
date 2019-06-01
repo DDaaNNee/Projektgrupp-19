@@ -46,7 +46,7 @@ input[name=fornamn], input[name=efternamn], input[name=email], input[name=loseno
   padding: 10px;
   margin: 5px 0 22px 0;
 }
-input[name=regbox], input[name=loggain]{
+input[name=regbox], input[name=loggain], input[name=skickainfo]{
   width: 83%;
   padding: 10px;
   margin: 5px 0 22px 0;

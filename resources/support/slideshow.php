@@ -1,12 +1,12 @@
 <div id="slideshow">
    <div>
-     <a href="index.php"><img src="resources/img/My Post(1).png" width="100%" height="100%"></a>
+     <a href="index.php"><img src="resources/img/nocco.png" width="100%" height="100%"></a>
    </div>
    <div>
-     <a href="index.php"><img src="resources/img/My Post(2).png" width="100%" height="100%"></a>
+     <a href="index.php"><img src="resources/img/redbull.png" width="100%" height="100%"></a>
    </div>
    <div>
-     <a href="index.php"><img src="resources/img/My Post(3).png" width="100%" height="100%"></a>
+     <a href="index.php"><img src="resources/img/extreme.png" width="100%" height="100%"></a>
    </div>
 </div>
 <script type="text/javascript">
