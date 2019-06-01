@@ -1,6 +1,6 @@
 <?php require_once("resources/support/checksession.php"); ?>
 <html>
-  <h6 href="index.php"><img src="resources/img/My Post (1).png" width="40%" height="40%">
+  <h6 href="index.php"><img src="resources/img/nocco.png" width="40%" height="40%">
 
   <form action="kundvagn.php" method="POST">
   Klicka här för att börja prenumenera på Sportpaketet <br>
