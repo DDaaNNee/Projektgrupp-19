@@ -1,4 +1,4 @@
-<?php require_once("resources/support/checksession.php"); ?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,20 +34,22 @@
         </form>
 
     <?php
+        //Eventuellt ska detta göra 
         //Metod för att lägga till antal gamingpaket i databasen
         $antalGaming = mysqli_real_escape_string($_POST['gamingpaket']);
         $gamingQuery = "INSERT INTO Beställningar(Gamingpaket) VALUES ($antalGaming)";
-        $addGaming=mysqli_query($conn, $gamingQuery);
+        $addGaming=mysqli_query($connection, $gamingQuery);
+        
 
         //Metod för att lägga till antal sportpaket i databasen
         $antalSport = mysqli_real_escape_string($_POST['sportpaket']);
         $sportQuery = "INSERT INTO Beställningar(Sportpaket) VALUES ($antalSport)";
-        $addSport=mysqli_query($conn, $sportQuery);
+        $addSport=mysqli_query($connection, $sportQuery);
 
         //Metod för att lägga till antal extrempaket i databasen
         $antalExtrem = mysqli_real_escape_string($_POST['extremsportpaket']);
         $extremQuery = "INSERT INTO Beställningar(Extrempaket) VALUES ($antalExtrem)";
-        $addSport=mysqli_query($conn, $extremQuery);
+        $addSport=mysqli_query($connection, $extremQuery);
     ?>
 
     </body>
