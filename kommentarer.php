@@ -1,9 +1,7 @@
 <html>
-    <head></head>
-
     <body>
         <form method='post'>
-            <input type="text" name="userComment" required>
+            <input type="text" name="anvandarKommentar" required>
             <input type="submit" value="Skicka in kommentar">
         </form>
     </body>
@@ -20,6 +18,20 @@
     $resultingQuery=$conn->query($commentQuery);
     while($row=$result->fetch_assoc()){
         echo "$row['Anvandare']","$row['Kommentarstid']"<br>;
-        echo "$row['Kommentar']" <br>;
+        echo "$row['anvandarKommentar']" <br>;
+    }
+    
+    if(!empty($_POST['anvandarKommentar'])){
+        $newComments= mysqli($conn, $_POST['anvandarKommentar']);
+        $loggedUser= $_SESSION['Anvandare'];
+
+        $query"INSERT INTO Kommentarer(Anvandare, anvandarKommentar) VALUES('$newComments', '$loggedUser')";
+        
+        if(mysqli_query($conn, $query)){
+            echo "Du har postat en kommentar $newComments";
+        }
+        else{
+            echo "Något gick fel: " .$sql.mysqli_error($conn);
+        }
     }
 ?>
