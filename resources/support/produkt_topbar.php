@@ -18,14 +18,14 @@
 
     <?php if (isset($_SESSION['inloggad']) && $_SESSION['inloggad'] == true){
             echo "<div class='mittkonto'>
-            <a href='minsida.php'>
+            <a href='../../minsida.php'>
               <img src='../../resources/img/mittkonto.png' alt='Mitt konto'>
             </a>
           </div>";
         }
         else {
           echo "<div class='mittkonto'>
-          <a href='login.php'>
+          <a href='../../login.php'>
             <img src='../../resources/img/mittkonto.png' alt='Mitt konto'>
           </a>
         </div>";
@@ -34,7 +34,7 @@
     ?>
 
     <div class="kundvagn">
-      <a href="kundvagn.php">
+      <a href="../../kundvagn.php">
         <img src="../../resources/img/cart.png" alt="Kundvagn">
       </a>
     </div>
