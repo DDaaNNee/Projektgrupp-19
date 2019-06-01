@@ -37,17 +37,17 @@
         //Metod för att lägga till antal gamingpaket i databasen
         $antalGaming = mysqli_real_escape_string($_POST['gamingpaket']);
         $gamingQuery = "INSERT INTO Beställningar(Gamingpaket) VALUES ($antalGaming)";
-        $addGaming=mysqli_query($connection, $gamingQuery);
+        $addGaming=mysqli_query($conn, $gamingQuery);
 
         //Metod för att lägga till antal sportpaket i databasen
         $antalSport = mysqli_real_escape_string($_POST['sportpaket']);
         $sportQuery = "INSERT INTO Beställningar(Sportpaket) VALUES ($antalSport)";
-        $addSport=mysqli_query($connection, $sportQuery);
+        $addSport=mysqli_query($conn, $sportQuery);
 
         //Metod för att lägga till antal extrempaket i databasen
         $antalExtrem = mysqli_real_escape_string($_POST['extremsportpaket']);
         $extremQuery = "INSERT INTO Beställningar(Extrempaket) VALUES ($antalExtrem)";
-        $addSport=mysqli_query($connection, $extremQuery);
+        $addSport=mysqli_query($conn, $extremQuery);
     ?>
 
     </body>
