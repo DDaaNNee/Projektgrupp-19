@@ -12,18 +12,16 @@
   </head>
   <body>
     <h1>Din kundvagn<hr></h1>
+      <?php /*valda produkter ska placeras i kundvagnen*/
+        if(!empty($_SESSION['username'])){
+          /*produkterna ska ligga i ett form eller bara stå ur ett echo*/
+          /*$findUser="SELECT Email, Adress, ID, Tel FROM Anvandare WHERE Email='$loginEmail'";
+          $orderQuerySQL= mysqli_query($conn, $findUser) or die(mysqli_error($conn));;*/
 
-    <div id="klarnaBet" style="width:100%;height:400px;"></div>
-    <script>
-      function myBet() {
-      var betProp= {
-                      center:new klarna.logIn.Bet(),
-                    };
-      var bet = new klana.logIn.Bet(document.getElementById("klarnaBet"),betProp);
-      }
-    </script>
-
-<script src="https://app.klarna.com/login?market=se&_ga=2.44112225.413331111.1557996630-174748787.1557996630"></script>
-
+          /*$order = "INSERT INTO Orders(Email, ID, ProduktNR, Telefonnummer, Adress, Antal) VALUES ('$email', '$adress', '$ID', '$produktNR', '$tel', '$antal')";*/
+          if (mysqli_query($conn, $query)) {
+              echo "Adderad information till databasen! <br>";
+          }
+        }?>
   </body>
 </html>
