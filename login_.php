@@ -20,6 +20,7 @@ if(!empty($_POST['login_email'])) {
     if ($count == 1) {
         $_SESSION['user'] = $loginEmail;
         $_SESSION['inloggad'] = true;
+        $_SESSION['produktsida'] = 'TEST';
         echo "<script>location.href='index.php'</script>";
     }
     else{

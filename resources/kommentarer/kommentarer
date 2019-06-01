@@ -1,26 +1,20 @@
 Problem som finns just nu / Vad som behöver göras:
 
-Sök-knappen och sök-rutan ska vara centrerade, eller strax höger från mitten
-
 Sök-knappen har ingen funktionalitet implementerad
 
-Topbar finns bara på index.html och inte på resten av sidorna
+Fixa fungerande länkar mellan paketen och resten av hemsidan (ex. navbar-knapparna från någon produktsida)
 
-Bilderna på index-sidan rullar inte kontinuerligt
+Göra paket-loggorna enhetliga och samma storlek
 
-Bilderna på index-sidan ska öppnas som en popup istället för att referera till platsen där bilden ligger,
-dvs att man ska stanna kvar på index.html istället för att navigera till "http://localhost/projektgrupp19/Bilder/bgX.jpg"
-på samma sätt som bilder under, den som inte rullar, öppnas och stängs
+Snygga till "Våra produkter" - sidan
 
-Ikon för kundvagn saknas
+Skapa implementering av beställningar utifrån valda produkter (kundvagn) och användare
 
-Logo för sidan saknas
+Skapa mervärde för användaren genom leaflet-api:t
 
-Process.html innehåller inget
 
-Kundvagn.html innehåller inget
 
-Ändra &#160; till något snyggare i form.html
+
 
 
 

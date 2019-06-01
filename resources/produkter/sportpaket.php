@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../../resources/css/mastercss.css">
     <link rel="stylesheet" href="../../resources/css/bars.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <?php include '../../resources/support/bars.php' ?>
-    <?php include '../../resources/support/dbconnect.php' ?>
+    <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produkt_bars.php') ?>
+    <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/dbconnect.php') ?>
 </head>
   <body>
     <h6 href="index.php"><img src="../../resources/img/nocco.png" width="40%" height="40%">

@@ -72,10 +72,10 @@ input[name=regbox], input[name=loggain], input[name=skickainfo]{
 #slideshow {
     position: relative;
     margin: auto;
-    width: 600px;
-    height: 300px;
+    width: 540px;
+    height: 540px;
     padding: 0px;
-    box-shadow: 0 0 7px rgba(0,0,0,1);
+    /*box-shadow: 0 0 0px rgba(0,0,0,1); */
 }
 
 #slideshow > div {
