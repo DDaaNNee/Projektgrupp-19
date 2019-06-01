@@ -12,6 +12,5 @@
   </head>
   <body>
     <h1>Din kundvagn<hr></h1>
-      <?php include 'resources/produkter/sportpaket.php'?>
   </body>
 </html>

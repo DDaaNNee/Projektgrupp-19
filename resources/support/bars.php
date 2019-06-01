@@ -7,12 +7,12 @@
   <body>
   <?php
   if (isset($_SESSION['inloggad']) && $_SESSION['inloggad'] == true){
-    include 'resources/support/topbar.php';
-    include 'resources/support/navbar_inloggad.php';
+    include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/topbar.php');
+    include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/navbar_inloggad.php');
   }
   else{
-    include 'resources/support/topbar.php';
-    include 'resources/support/navbar_utloggad.php';
+    include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/topbar.php');
+    include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/navbar_utloggad.php');
   }
   ?>
   </body>

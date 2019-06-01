@@ -6,8 +6,8 @@
   </head>
   <body>
     <?php
-    include 'resources/support/dbconnect.php';
-    include 'resources/support/checksession.php';
+    include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/dbconnect.php');
+    include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/checksession.php');
 
     $useremail = $_SESSION['user'];
     $queryFornamn = "SELECT Fornamn FROM Anvandare WHERE Email = '$useremail'";

@@ -9,6 +9,7 @@
     if ($_SESSION['user'] == 'admin'){
       echo "<div class='topnavigation'>
         <a href='index.php'>Home</a>
+        <a href='produkter.php'>Våra produkter</a>
         <a href='databas.php'>Databas</a>
         <a href='kundvagn.php'>Kundvagn</a>
         <a href='logout.php'>Logga ut</a>
@@ -17,6 +18,7 @@
     else{
       echo "<div class='topnavigation'>
         <a href='index.php'>Home</a>
+        <a href='produkter.php'>Våra produkter</a>
         <a href='kundvagn.php'>Kundvagn</a>
         <a href='logout.php'>Logga ut</a>
         </div>";

@@ -5,31 +5,18 @@
     <title></title>
   </head>
   <body>
-    <form class="" action="index.html" method="post">
-      <div class="produktbarpaket">
-        <label for="">Sportpaket</label>
-        <input type="text" name="sportpaket" value="">
-      </div>
-      <div class="produktbarpaket">
-        <label for="">Extremepaket</label>
-        <input type="text" name="sportpaket" value="">
-      </div>
-      <div class="produktbarpaket">
-        <label for="">Gamingpaket</label>
-        <input type="text" name="sportpaket" value="">
-      </div>
-    </form>
-
     <hr>
     <?php
-    echo basename(__FILE__);
-    if (basename(__FILE__) == 'sportpaket.php') {
+    if ($produktsida == 'sportpaket.php') {
+      echo "<hr>";
 
     }
-    else if(basename(__FILE__) == 'extremepaket.php'){
+    else if($produktsida == 'extremepaket.php'){
+      echo "<hr>";
 
     }
-    else if (basename(__FILE__) == 'gamingpaket.php') {
+    else if ($produktsida == 'gamingpaket.php') {
+      echo "<hr>";
 
     }
     ?>
