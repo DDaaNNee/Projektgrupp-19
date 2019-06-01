@@ -18,7 +18,6 @@
 <h2><b>Din största återförsäljare av energidryck online!<hr></b></h2>
 
 <?php include 'resources/support/slideshow.php' ?>
-<?php include 'resources/produkter/sportpaket.php'; ?>
 <hr>
 </body>
  </html>
