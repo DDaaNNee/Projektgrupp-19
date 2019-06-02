@@ -25,7 +25,7 @@
         $newComments= mysqli($conn, $_POST['anvandarKommentar']);
         $loggedUser= $_SESSION['Anvandare'];
 
-        $query"INSERT INTO Kommentarer(Anvandare, anvandarKommentar) VALUES('$loeddUser', '$newComments')";
+        $query"INSERT INTO Kommentarer(Anvandare, anvandarKommentar) VALUES('$loggedUser', '$newComments')";
         
         if(mysqli_query($conn, $query)){
             echo "Du har postat en kommentar $newComments";
