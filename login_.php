@@ -21,6 +21,13 @@ if(!empty($_POST['login_email'])) {
         $_SESSION['user'] = $loginEmail;
         $_SESSION['inloggad'] = true;
         $_SESSION['produktsida'] = 'TEST';
+
+        /*$queryUserID = "SELECT ID FROM Anvandare WHERE Email='$loginEmail'";
+        $findUserID = mysqli_query($conn, $queryUserId) or die(mysqli_error($conn));
+        $findrowID = mysqli_fetch_row($findUserID);
+        $findrowID = $findrowID[0];*/
+
+        /*$_SESSION['currID'] = $findrowID;*/
         echo "<script>location.href='index.php'</script>";
     }
     else{

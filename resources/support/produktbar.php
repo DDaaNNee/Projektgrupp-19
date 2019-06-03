@@ -6,7 +6,6 @@
     <title></title>
   </head>
   <body>
-    <hr>
     <?php
     if ($produktsida == 'sportpaket.php') {
       echo "<hr>";

@@ -8,12 +8,14 @@
     <title>Våra produkter</title>
     <link rel="stylesheet" href="../../resources/css/mastercss.css">
     <link rel="stylesheet" href="../../resources/css/bars.css">
+    <script src="../../resources/js/scrollDivs.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produkt_bars.php') ?>
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/dbconnect.php') ?>
 </head>
   <body>
     <h6 href="index.php"><img src="../../resources/img/extreme.png" width="40%" height="40%">
+    <h4>
 
     <form action="kundvagn.php" method="POST">
     Klicka här för att börja prenumenera på Extremepaketet <br>
@@ -24,12 +26,9 @@
     $produktsida = basename(__FILE__);
     $_SESSION['produktsida'] = $produktsida;
 
-/*
-  $extremePaket = $_POST['submitExtreme'];
+    echo "<div id='commentDIV' style='overflow-y: auto; height: 430px;>";
+    echo "<h4><table border='0'>";
 
-  $antalExtreme = mysqli_real_escape_string($conn, $extremePaket);
-  $extremeQuery = "INSERT INTO Beställningar(Extremepaketet) VALUES ($antalExtreme)";
-  $addExtreme=mysqli_query($conn, $extremeQuery); */
     include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produktbar.php');
     include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/kommentarer.php');
   ?>

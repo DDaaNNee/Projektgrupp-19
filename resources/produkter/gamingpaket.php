@@ -13,6 +13,7 @@
 </head>
   <body>
     <h6 href="index.php"><img src="../../resources/img/redbull.png" width="40%" height="40%">
+      <h4>
 
     <form action="kundvagn.php" method="POST">
     Klicka här för att börja prenumenera på Gamingpaketet <br>
@@ -21,12 +22,10 @@
   </html>
   <?php
     $produktsida = basename(__FILE__);
-/*
-  $gamingPaket = $_POST['submitGaming'];
+    $_SESSION['produktsida'] = $produktsida;
 
-  $antalGaming = mysqli_real_escape_string($conn, $gamingPaket);
-  $gamingQuery = "INSERT INTO Beställningar(Sportpaket) VALUES ($antalGaming)";
-  $addGaming = mysqli_query($conn, $gamingQuery); */
+    echo "<div id='commentDIV' style='overflow-y: auto; height: 430px;>";
+    echo "<h4><table border='0'>";
 
     include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produktbar.php');
     include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/kommentarer.php');

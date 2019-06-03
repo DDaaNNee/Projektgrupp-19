@@ -13,6 +13,7 @@
 </head>
   <body>
     <h6 href="index.php"><img src="../../resources/img/nocco.png" width="40%" height="40%">
+      <h4>
 
     <form action="" method="POST">
       <a>Välj paket</a><br>
@@ -33,6 +34,7 @@
 
     <?php
     $produktsida = basename(__FILE__);
+    $_SESSION['produktsida'] = $produktsida;
 
     if (!empty($_POST['manader'])) {
 
@@ -48,8 +50,11 @@
     $produktQuery = "INSERT INTO Kundvagn(Produktnamn, Antal, Manader, UserID) VALUES ('$valdProdukt', '$antalProdukt', '$manad', '$userID')";
     mysqli_query($conn, $produktQuery);
   }
+  echo "<div id='commentDIV' style='overflow-y: auto; height: 430px;>";
+  echo "<h4><table border='0'>";
+
+  include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produktbar.php');
   include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/kommentarer.php');
-  include 'resources/support/produktbar.php';
   ?>
   </body>
 </html>

@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="ikon">
-      <a href="index.php">
+      <a href="../../index.php">
         <img src="../../resources/img/ENRG-TRANSP.png" alt="Home">
       </a>
     </div>

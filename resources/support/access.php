@@ -11,7 +11,7 @@
     if (isset($_SESSION['inloggad']) && $_SESSION['user'] == 'admin') {
     }
     else {
-      echo "<script> alert('Något gick fel!') location.href='index.php'";
+      echo "<script> alert('Något gick fel!'); location.href='index.php'";
     }
      ?>
 
