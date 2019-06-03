@@ -84,6 +84,11 @@ textarea {
   cols: 40;
 }
 
+.kommentarsForm {
+  width: 100%;
+}
+
+
   /*@media only screen and (max-width:750px){
     .topnavigation {position: relative; width: 120px; display: grid;}
     #topbar{background-color: #333;}
@@ -101,9 +106,9 @@ textarea {
     h2 {position: absolute; top: 240px; margin-left: 205px;}
 } */
 
-@media only screen and (max-width:300px){
-  .anvandarKommentar {position: absolute; top: 90px; margin-left: 190px;}
-  .skicka_kommentar {position: absolute; top: 240px; margin-left: 205px;}
+@media screen and (min-width:960px){
+  .kommentarsForm {width: 50%;}
+
 }
 
 #slideshow {
@@ -112,7 +117,7 @@ textarea {
     width: 540px;
     height: 540px;
     padding: 0px;
-    /*box-shadow: 0 0 0px rgba(0,0,0,1); */
+    box-shadow: 0 0 0px rgba(0,0,0,1);
 }
 
 #slideshow > div {

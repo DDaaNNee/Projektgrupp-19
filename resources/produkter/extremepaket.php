@@ -13,7 +13,7 @@
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/dbconnect.php') ?>
 </head>
   <body>
-    <h6 href="index.php"><img name="extreme" class="extreme" src="../../resources/img/extreme.png">
+    <h6 href="index.php"><img name="extreme" class="extreme" src="../../resources/img/Extremepaketet.png">
     <h4>
 
     <form action="kundvagn.php" method="POST">

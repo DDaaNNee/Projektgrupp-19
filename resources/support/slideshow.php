@@ -1,12 +1,12 @@
 <div id="slideshow">
    <div>
-     <a href="resources/produkter/sportpaket.php"><img src="resources/img/nocco.png" width="100%" height="100%"></a>
+     <a href="resources/produkter/sportpaket.php"><img src="resources/img/sportpaketet.png" width="100%" height="100%"></a>
    </div>
    <div>
-     <a href="resources/produkter/gamingpaket.php"><img src="resources/img/redbull.png" width="100%" height="100%"></a>
+     <a href="resources/produkter/gamingpaket.php"><img src="resources/img/CompletedGamerYesboi.png" width="100%" height="100%"></a>
    </div>
    <div>
-     <a href="resources/produkter/extremepaket.php"><img src="resources/img/extreme.png" width="100%" height="100%"></a>
+     <a href="resources/produkter/extremepaket.php"><img src="resources/img/Extremepaketet.png" width="100%" height="100%"></a>
    </div>
 </div>
 <script type="text/javascript">

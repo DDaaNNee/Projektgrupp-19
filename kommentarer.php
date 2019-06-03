@@ -7,8 +7,10 @@
 
         <h4>
         <?php
+        include 'resources/support/dbconnect.php';
+        echo "<form action='' class='kommentarsForm' method='post'>";
 
-            include 'resources/support/dbconnect.php';
+
             $commentQuery = "SELECT * FROM Kommentarer WHERE ProduktNamn LIKE '%$produktsida%'";
             $resultingQuery = $conn->query($commentQuery);
             if ($resultingQuery->num_rows > 0) {
@@ -32,13 +34,13 @@
                     echo "Något gick fel: " . mysqli_error($conn);
                 }
             }
+            echo "<textarea type='text' name='anvandarKommentar' placeholder='Enter your comment!'' required></textarea>
+            <input type='submit' name='skicka_kommentar' value='Skicka kommentar'>
+        </form>";
 
 
         ?>
-        <form action="" method='post'>
-            <textarea type="text" name="anvandarKommentar" placeholder="Enter your comment!" required></textarea>
-            <input type="submit" name="skicka_kommentar" value="Skicka kommentar">
-        </form>
+
     </body>
 
 </html>
