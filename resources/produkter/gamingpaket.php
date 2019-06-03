@@ -7,6 +7,7 @@
     <title>Våra produkter</title>
     <link rel="stylesheet" href="../../resources/css/mastercss.css">
     <link rel="stylesheet" href="../../resources/css/bars.css">
+    <script src="../../resources/js/scrollDivs.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produkt_bars.php') ?>
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/dbconnect.php') ?>
@@ -24,11 +25,10 @@
     $produktsida = basename(__FILE__);
     $_SESSION['produktsida'] = $produktsida;
 
-    echo "<div id='commentDIV' style='overflow-y: auto; height: 430px;>";
-    echo "<h4><table border='0'>";
-
-    include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produktbar.php');
+    echo "<hr>";
+    echo "<div id='commentDIV' style='overflow-y: auto; height: 460px;>";
     include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/kommentarer.php');
+    include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produktbar.php');
   ?>
 
   </body>

@@ -7,12 +7,13 @@
     <title>Våra produkter</title>
     <link rel="stylesheet" href="../../resources/css/mastercss.css">
     <link rel="stylesheet" href="../../resources/css/bars.css">
+    <script src="../../resources/js/scrollDivs.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produkt_bars.php') ?>
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/dbconnect.php') ?>
 </head>
   <body>
-    <h6 href="index.php"><img src="../../resources/img/nocco.png" width="40%" height="40%">
+    <h6 href="index.php"><img src="../../resources/img/sport.png" width="40%" height="40%">
       <h4>
 
     <form action="" method="POST">
@@ -50,11 +51,10 @@
     $produktQuery = "INSERT INTO Kundvagn(Produktnamn, Antal, Manader, UserID) VALUES ('$valdProdukt', '$antalProdukt', '$manad', '$userID')";
     mysqli_query($conn, $produktQuery);
   }
-  echo "<div id='commentDIV' style='overflow-y: auto; height: 430px;>";
-  echo "<h4><table border='0'>";
-
-  include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produktbar.php');
+  echo "<hr>";
+  echo "<div id='commentDIV' style='overflow-y: auto; height: 460px;>";
   include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/kommentarer.php');
+  include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produktbar.php');
   ?>
   </body>
 </html>

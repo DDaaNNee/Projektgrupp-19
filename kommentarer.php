@@ -2,9 +2,9 @@
 <html>
     <body>
         <form action="" method='post'>
-            <input type="text" name="anvandarKommentar" required>
-            <input type="submit" value="Skicka in kommentar">
+
         </form>
+
         <h4>
         <?php
 
@@ -13,12 +13,13 @@
             $resultingQuery = $conn->query($commentQuery);
             if ($resultingQuery->num_rows > 0) {
               while($row = $resultingQuery->fetch_assoc()){
-                echo "{$row['Anvandare']} ({$row['Kommentarstid']})<br> {$row['Kommentar']}<hr><br>";
+                echo "{$row['Anvandare']} ({$row['Kommentarstid']}):<br> {$row['Kommentar']}<hr>";
             }
           }
+          mysqli_close($conn);
 
             if(!empty($_POST['anvandarKommentar'])){
-                $newComments = $_POST['anvandarKommentar'];
+                $newComments = mysqli_real_escape_string($conn, $_POST['anvandarKommentar']);
                 $loggedUser = $_SESSION['user'];
                 $produktsida = $_SESSION['produktsida'];
 
@@ -31,9 +32,13 @@
                     echo "Något gick fel: " . mysqli_error($conn);
                 }
             }
-            mysqli_close($conn);
+
 
         ?>
+        <form action="" method='post'>
+            <textarea type="text" name="anvandarKommentar" placeholder="Enter your comment!" required></textarea>
+            <input type="submit" name="skicka_kommentar" value="Skicka kommentar">
+        </form>
     </body>
 
 </html>

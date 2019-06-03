@@ -35,21 +35,53 @@ h5{
   text-shadow: 2px 2px 2px black;
   font: 15px arial, sans-serif;
 }
+h6{
+  width: 20%;
+  height: 10%;
+  text-align: center;
+}
+
+img[name=extreme]{
+  margin-left: 175%;
+  height: 200px;
+  width: 200px;
+}
+.extreme {
+
+}
 
 a{
   color: white;
 }
 
 
-input[name=fornamn], input[name=efternamn], input[name=email], input[name=losenord], input[name=adress], input[name=telefonnummer], input[name=login_email], input[name=login_password] {
+input[name=fornamn], input[name=efternamn], input[name=email], input[name=losenord], input[name=adress], input[name=telefonnummer], input[name=login_email], input[name=login_password]{
   width: 80%;
   padding: 10px;
   margin: 5px 0 22px 0;
 }
-input[name=regbox], input[name=loggain], input[name=skickainfo]{
+input[name=regbox], input[name=loggain], input[name=skickainfo] {
   width: 83%;
   padding: 10px;
   margin: 5px 0 22px 0;
+}
+input[name=anvandarKommentar] {
+  width: 95%;
+  padding: 10px;
+  margin: 5px;
+}
+input[name=skicka_kommentar] {
+  width: 97%;
+  padding: 10px;
+  margin: 5px;
+}
+textarea {
+  border: 2px solid #888;
+  width: 96%;
+  margin-left: 5px;
+  position: relative;
+  rows: 6;
+  cols: 40;
 }
 
   /*@media only screen and (max-width:750px){
@@ -68,6 +100,11 @@ input[name=regbox], input[name=loggain], input[name=skickainfo]{
     h1 {position: absolute; top: 90px; margin-left: 190px;}
     h2 {position: absolute; top: 240px; margin-left: 205px;}
 } */
+
+@media only screen and (max-width:300px){
+  .anvandarKommentar {position: absolute; top: 90px; margin-left: 190px;}
+  .skicka_kommentar {position: absolute; top: 240px; margin-left: 205px;}
+}
 
 #slideshow {
     position: relative;

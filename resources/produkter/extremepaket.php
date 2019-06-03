@@ -1,6 +1,5 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . '/Projektgrupp19/resources/support/checksession.php'); ?>
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -14,7 +13,7 @@
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/dbconnect.php') ?>
 </head>
   <body>
-    <h6 href="index.php"><img src="../../resources/img/extreme.png" width="40%" height="40%">
+    <h6 href="index.php"><img name="extreme" class="extreme" src="../../resources/img/extreme.png">
     <h4>
 
     <form action="kundvagn.php" method="POST">
@@ -26,11 +25,10 @@
     $produktsida = basename(__FILE__);
     $_SESSION['produktsida'] = $produktsida;
 
-    echo "<div id='commentDIV' style='overflow-y: auto; height: 430px;>";
-    echo "<h4><table border='0'>";
-
-    include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produktbar.php');
+    echo "<hr>";
+    echo "<div id='commentDIV' style='overflow-y: auto; height: 460px;>";
     include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/kommentarer.php');
+    include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produktbar.php');
   ?>
 
   </body>

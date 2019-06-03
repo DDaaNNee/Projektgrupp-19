@@ -15,7 +15,7 @@
     <hr>
     <a href="resources/produkter/extremepaket.php"><img src="resources/img/extreme.png" alt="Extremepaketet" width="250px" height="250px">Extremepaketet!</a>
     <a href="resources/produkter/gamingpaket.php"><img src="resources/img/redbull.png" alt="Gamingpaketet" width="250px" height="250px">Gamingpaketet!</a>
-    <a href="resources/produkter/sportpaket.php"><img src="resources/img/nocco.png" alt="Sportpaketet" width="250px" height="250px">Sportpaketet!</a>
+    <a href="resources/produkter/sportpaket.php"><img src="resources/img/sport.png" alt="Sportpaketet" width="250px" height="250px">Sportpaketet!</a>
 
 
   </body>
