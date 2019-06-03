@@ -9,16 +9,16 @@
   <link rel="stylesheet" href="resources/css/bars.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <?php include 'resources/support/bars.php'?>
-  <?php /*include 'resources/support/dbconnect.php' */?>
+  <?php include 'resources/support/dbconnect.php' ?>
 </head>
 <body>
+
 <h1><b>Sökresultat</b></h1>
 <hr>
+<h5>
 <?php
-$hittaProdukt = $_POST['sokruta'];
-if (!empty($hittaProdukt) && $hittaprodukt != 'Sök...') {
-  mysqli_query($conn, $queryProdukter);
-  $queryProdukter = "SELECT * FROM Produkter WHERE Produktnamn LIKE '%$hittaProdukt%';"
+if (!empty($sokresultat) && $sokresultat != 'Sök...') {
+  /*$queryProdukter = "SELECT * FROM Produkter WHERE Produktnamn LIKE '%$hittaProdukt%';"
   $result = $conn->query($queryProdukter);
   if ($result->num_rows > 0) {
     echo "<table border='1'>";
@@ -33,6 +33,21 @@ if (!empty($hittaProdukt) && $hittaprodukt != 'Sök...') {
 mysqli_close($conn);
 }
 
-?>
+?>*/
+      $sql = "SELECT * FROM Produkter WHERE ProduktNamn LIKE '%$sokresultat%'";
+      $result = $conn->query($sql);
+      if ($result->num_rows > 0) {
+        echo "<table border='1'>";
+        echo "<tr><td>ProduktNr</td><td>Pris</td><td>ProduktNamn</td><td>Länk</td><tr>\n";
+        while ($row = $result -> fetch_assoc()) {
+          echo "<tr><td>{$row["ProduktNr"]}</td><td>{$row["Pris"]}</td><td>{$row["ProduktNamn"]}</td><td>{$row["LankTillProdukt"]}</td><tr>";
+        }
+      }
+      else {
+          echo "0 resultat!";
+      }
+    mysqli_close($conn);
+  }
+    ?>
 </body>
  </html>

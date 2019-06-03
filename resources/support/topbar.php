@@ -14,12 +14,20 @@
 
     <form class="" action="sokning.php" method="post">
     <div class="sökruta">
-      <input type="text" name="sokruta" placeholder="Sök...">
+      <input type="text" name="sokruta" placeholder="Sök..." value="">
       <input type="submit" name="sok" value="Sök">
     </div>
     </form>
 
-    <?php if (isset($_SESSION['inloggad']) && $_SESSION['inloggad'] == true){
+    <?php
+    if (!isset($_POST['sokruta']) || $_POST['sokruta'] == '' || $_POST['sokruta'] == 'Sök...') {
+      // code...
+    }
+    else {
+      $sokresultat = $_POST['sokruta'];
+    }
+
+    if (isset($_SESSION['inloggad']) && $_SESSION['inloggad'] == true){
             echo "<div class='mittkonto'>
             <a href='minsida.php'>
               <img src='resources/img/mittkonto.png' alt='Mitt konto'>

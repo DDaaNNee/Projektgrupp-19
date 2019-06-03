@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="resources/css/bars.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <?php include 'resources/support/bars.php' ?>
-    <?php /*include 'resources/support/dbconnect.php';*/ ?>
+    <?php include 'resources/support/dbconnect.php'; ?>
   </head>
   <body>
     <h1>Din kundvagn<hr></h1>
     <h5>
     <?php
-    $queryKundvagn = "SELECT * FROM Kundvagn";
+    $currUser = $_SESSION['user'];
+    $queryKundvagn = "SELECT * FROM Kundvagn WHERE UserID = '$currUser'";
     $result = $conn->query($queryKundvagn);
     if ($result->num_rows > 0) {
       echo "<table border='1'>";

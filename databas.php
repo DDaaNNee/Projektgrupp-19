@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="resources/css/bars.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <?php include 'resources/support/bars.php' ?>
-    <?php /*include 'resources/support/dbconnect.php'*/ ?>
+    <?php include 'resources/support/dbconnect.php' ?>
     <?php require_once('resources/support/access.php') ?>
   </head>
   <body>

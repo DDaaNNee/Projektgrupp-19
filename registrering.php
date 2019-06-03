@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="resources/css/bars.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <?php include 'resources/support/bars.php' ?>
-    <?php /*include 'resources/support/dbconnect.php'*/ ?>
+    <?php include 'resources/support/dbconnect.php' ?>
   </head>
   <body>
     <h1>Registreringsformulär<hr></h1> <!-- Använd table eller divar -->
