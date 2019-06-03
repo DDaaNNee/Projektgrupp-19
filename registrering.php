@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="resources/css/bars.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <?php include 'resources/support/bars.php' ?>
-    <?php include 'resources/support/dbconnect.php' ?>
+    <?php /*include 'resources/support/dbconnect.php'*/ ?>
   </head>
   <body>
     <h1>Registreringsformulär<hr></h1> <!-- Använd table eller divar -->
@@ -28,7 +28,7 @@
         <input type="text" name="adress" value="" placeholder="Skriv in din adress" required><br>
         <label for="">Telefonnummer: </label><br>
         <input type="tel" name="telefonnummer" value="" placeholder="Skriv in ditt telefonnummer" required pattern="[0][7][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"><br>-->
-        <label for="">Jag accepterar <a href="#" onClick="alert('This Agreement and the Security Interests shall terminate on the date on which all payments under the Debentures have been indefeasibly paid in full and all other Obligations have been paid or discharged; provided, however, that all indemnities of the Debtors contained in this Agreement (including, without limitation, Annex B hereto) shall survive and remain operative and in full force and effect regardless of the termination of this Agreement.')">användarvillkoren: </a></label>
+        <label for="">Jag accepterar <a href="#" onClick="alert('Genom att klicka i denna ruta ger du, hädanefter 'Användaren', rätten till oss, hädenafter 'Företaget, att lagra den angivna information i en privat databas.')">användarvillkoren</a>: </label>
         <input type="checkbox" value="" name="accept" required> <br><br>
         <input type="submit" value="Registrera" name="regbox">
         </h4>

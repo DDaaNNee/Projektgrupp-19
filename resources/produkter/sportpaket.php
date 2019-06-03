@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../resources/css/bars.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produkt_bars.php') ?>
-    <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/dbconnect.php') ?>
+    <?php /*include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/dbconnect.php')*/ ?>
 </head>
   <body>
     <h6 href="index.php"><img src="../../resources/img/nocco.png" width="40%" height="40%">
@@ -48,6 +48,7 @@
     $produktQuery = "INSERT INTO Kundvagn(Produktnamn, Antal, Manader, UserID) VALUES ('$valdProdukt', '$antalProdukt', '$manad', '$userID')";
     mysqli_query($conn, $produktQuery);
   }
+  include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/kommentarer.php');
   include 'resources/support/produktbar.php';
   ?>
   </body>

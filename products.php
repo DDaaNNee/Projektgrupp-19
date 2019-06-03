@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="resources/css/bars.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <?php include 'resources/support/bars.php' ?>
-        <?php include 'resources/support/dbconnect.php' ?>
+        <?php /*include 'resources/support/dbconnect.php'*/ ?>
     </head>
     <body>
      <!--     <img src="" alt="Gamingpaketet">  Här ska vi lägga till bild-->
@@ -34,12 +34,12 @@
         </form>
 
     <?php
-        //Eventuellt ska detta göra 
+        //Eventuellt ska detta göra
         //Metod för att lägga till antal gamingpaket i databasen
         $antalGaming = mysqli_real_escape_string($_POST['gamingpaket']);
         $gamingQuery = "INSERT INTO Beställningar(Gamingpaket) VALUES ($antalGaming)";
         $addGaming=mysqli_query($connection, $gamingQuery);
-        
+
 
         //Metod för att lägga till antal sportpaket i databasen
         $antalSport = mysqli_real_escape_string($_POST['sportpaket']);

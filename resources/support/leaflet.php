@@ -1,3 +1,4 @@
+<?php require_once("resources/support/checksession.php"); ?>
 <!DOCTYPE html>
 <html>
   <div id="mapid"></div>

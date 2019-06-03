@@ -1,3 +1,4 @@
+<?php require_once("resources/support/checksession.php"); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -11,10 +12,12 @@
       </a>
     </div>
 
+    <form class="" action="sokning.php" method="post">
     <div class="sökruta">
-      <input type="text" placeholder="Sök...">
-      <input type="submit" name="Sök" value="Sök">
+      <input type="text" name="sokruta" placeholder="Sök...">
+      <input type="submit" name="sok" value="Sök">
     </div>
+    </form>
 
     <?php if (isset($_SESSION['inloggad']) && $_SESSION['inloggad'] == true){
             echo "<div class='mittkonto'>
@@ -30,7 +33,6 @@
           </a>
         </div>";
         }
-
     ?>
 
     <div class="kundvagn">

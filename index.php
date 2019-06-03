@@ -19,5 +19,6 @@
 
 <?php include 'resources/support/slideshow.php' ?>
 <hr>
+<?php include 'resources/support/leaflet.php' ?>
 </body>
  </html>
