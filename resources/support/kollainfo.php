@@ -14,7 +14,7 @@
     $queryFornamn = "SELECT Fornamn FROM Anvandare WHERE Email = '$useremail'";
     $queryEfternamn = "SELECT Efternamn FROM Anvandare WHERE Email = '$useremail'";
     $queryAdress = "SELECT Adress FROM Anvandare WHERE Email = '$useremail'";
-    $queryTelefonnummer = "SELECT Fornamn FROM Anvandare WHERE Email = '$useremail'";
+    $queryTelefonnummer = "SELECT Telefonnummer FROM Anvandare WHERE Email = '$useremail'";
 
     $resultFornamn = mysqli_query($conn, $queryFornamn) or die(mysqli_error($conn));
     $resultEfternamn = mysqli_query($conn, $queryEfternamn) or die(mysqli_error($conn));
@@ -39,21 +39,22 @@
     echo "<div class='addera_info'>";
     echo "<h4>";
 
+
     if (is_null($rowFornamn) == 'true') {
       echo "<label for=''>Förnamn: </label><br>
-      <input type='text' name='fornamn' value='' placeholder='Skriv in ditt förnamn'><br>";
+      <input type='text' name='fornamn' value='' placeholder='Skriv in ditt förnamn' autofocus required><br>";
     }
     if (is_null($rowEfternamn) == 'true') {
       echo "<label for=''>Efternamn: </label><br>
-      <input type='text' name='efternamn' value='' placeholder='Skriv in ditt efternamn'><br>";
+      <input type='text' name='efternamn' value='' placeholder='Skriv in ditt efternamn' required><br>";
     }
     if (is_null($rowAdress) == 'true') {
       echo "<label for=''>Adress: </label><br>
-      <input type='text' name='adress' value='' placeholder='Skriv in din adress'><br>";
+      <input type='text' name='adress' value='' placeholder='Skriv in din adress' required><br>";
     }
     if (is_null($rowTelefonnummer) == 'true') {
       echo "<label for=''>Telefonnummer: </label><br>
-      <input type='number' name='telefonnummer' value='' placeholder='Skriv in ditt telefonnummer'><br>";
+      <input type='number' name='telefonnummer' value='' placeholder='Skriv in ditt telefonnummer' required><br>";
     }
     if (is_null($rowFornamn) == 'true' || is_null($rowEfternamn) == 'true' || is_null($rowAdress) == 'true' || is_null($rowTelefonnummer) == 'true') {
       echo "<input type='submit' name='skickainfo' value='Skicka'";

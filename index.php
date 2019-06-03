@@ -17,6 +17,10 @@
 <h1><b>Välkommen till ENRGbolaget!</b></h1>
 <h2><b>Din största återförsäljare av energidryck online!<hr></b></h2>
 
+<!--<script type="text/javascript">
+  alert('Är du över 15 år gammal?'); location.href='google.com';
+</script>-->
+
 <?php include 'resources/support/slideshow.php' ?>
 <hr>
 <?php include 'resources/support/leaflet.php' ?>

@@ -13,10 +13,11 @@
   <body>
     <h1>Våra produkter</h1>
     <hr>
+    <h6>
     <a href="resources/produkter/extremepaket.php"><img src="resources/img/Extremepaketet.png" alt="Extremepaketet" width="250px" height="250px"></a>
     <a href="resources/produkter/gamingpaket.php"><img src="resources/img/CompletedGamerYesboi.png" alt="Gamingpaketet" width="250px" height="250px"></a>
     <a href="resources/produkter/sportpaket.php"><img src="resources/img/Sportpaketet.png" alt="Sportpaketet" width="250px" height="250px"></a>
-
+    </h6>
 
   </body>
 </html>

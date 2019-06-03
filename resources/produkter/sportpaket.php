@@ -13,48 +13,28 @@
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/dbconnect.php') ?>
 </head>
   <body>
-    <h6 href="index.php"><img src="../../resources/img/Sportpaketet.png" width="40%" height="40%">
+    <h6 href="index.php"><img name="sport" src="../../resources/img/Sportpaketet.png">
       <h4>
+        <ul>
+          <li>Namn: Nocco</li><br>
+          <li>Innehåll: BCAA (grenade aminosyror), koffein, grönt te-extrakt och vitaminer. NOCCO BCAA kommer i åtta goda smaker med kolsyra; Miami Strawberry, Blueberry, Passion, Carnival Exotic, Caribbean, Tropical, Persika och Päron. Samtliga NOCCO BCAA är sockerfria. NOCCO BCAA innehåller per portion (330 ml)</li><br>
+          <li>Näringsinnehåll: · BCAA 4:1:1 (leucin, valin, isoleucin); 3000 mg · Koffein 180 mg· Vitamin D 100% DRI · Vitamin B6 100% DRI · Vitamin B12 100% DRI · Biotin 100% DRI · Folsyra 50% DRI · Niacin 80% DRI *DRI: Dagligt referensintag</li><br>
+          <li>Antal: 24st</li><br>
+        </ul>
 
-    <form action="" method="POST">
-      <a>Välj paket</a><br>
-      <select name="Produkt">
-        <option value="sportpaket">Sportpaket</option>
-        <option value="gamingpaket">Gamingpaket</option>
-        <option value="extremepaket">Extremetpaket</option>
-      </select><br>
-      <a>Vilket antal vill du köpa?</a><br>
-      <select name="Antal">
-        <option value="12">12st</option>
-        <option value="24">24st</option><br>
-      </select>
-      <input type="text" name="manader" value=""><br>
-        <a>Klicka här för att lägga till produkt</a> <br>
-        <input type="submit" name="submitSport" required>
-    </form>
+        <form action="../support/adderaVara.php" method="POST">
+        Klicka här för att börja prenumenera på Sportpaketet! <br>
+        <input type="submit" name="adderaVara" value="Lägg till i kundvagn" required>
+        </form>
+      </html>
+      <?php
+        $produktsida = basename(__FILE__);
+        $_SESSION['produktsida'] = $produktsida;
 
-    <?php
-    $produktsida = basename(__FILE__);
-    $_SESSION['produktsida'] = $produktsida;
-
-    if (!empty($_POST['manader'])) {
-
-    $paket = $_POST['Produkt'];
-    $antal = $_POST['Antal'];
-    $manad = $_POST['manader'];
-    $userID = $_SESSION['user'];
-
-    $valdProdukt = mysqli_real_escape_string($conn, $paket);
-    $antalProdukt = mysqli_real_escape_string($conn, $antal);
-    $antalManad = mysqli_real_escape_string($conn, $manad);
-
-    $produktQuery = "INSERT INTO Kundvagn(Produktnamn, Antal, Manader, UserID) VALUES ('$valdProdukt', '$antalProdukt', '$manad', '$userID')";
-    mysqli_query($conn, $produktQuery);
-  }
-  echo "<hr>";
-  echo "<div id='commentDIV' style='overflow-y: auto; height: 460px;>";
-  include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/kommentarer.php');
-  include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produktbar.php');
-  ?>
+        echo "<hr>";
+        echo "<div id='commentDIV' style='overflow-y: auto; height: 460px;>";
+        include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/kommentarer.php');
+        include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/produktbar.php');
+      ?>
   </body>
 </html>

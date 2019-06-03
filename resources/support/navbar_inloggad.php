@@ -13,6 +13,7 @@
         <a href='produkter.php'>Våra produkter</a>
         <a href='databas.php'>Databas</a>
         <a href='kundvagn.php'>Kundvagn</a>
+        <a href='allakommentarer.php'>Kommentarer</a>
         <a href='logout.php'>Logga ut</a>
         </div>";
     }

@@ -2,9 +2,7 @@
 <html>
     <body>
         <form action="" method='post'>
-
         </form>
-
         <h4>
         <?php
         include 'resources/support/dbconnect.php';
@@ -18,7 +16,7 @@
                 echo "{$row['Anvandare']} ({$row['Kommentarstid']}):<br> {$row['Kommentar']}<hr>";
             }
           }
-          mysqli_close($conn);
+
 
             if(!empty($_POST['anvandarKommentar'])){
                 $newComments = mysqli_real_escape_string($conn, $_POST['anvandarKommentar']);
@@ -28,19 +26,18 @@
                 $query = "INSERT INTO Kommentarer(Anvandare, Kommentar, ProduktNamn) VALUES('$loggedUser', '$newComments', '$produktsida')";
 
                 if(mysqli_query($conn, $query)){
-                    echo "Du har postat en kommentar $newComments";
+                    echo "Du har postat en ny kommentar: '$newComments'<br><br>";
                 }
                 else{
                     echo "Något gick fel: " . mysqli_error($conn);
                 }
             }
-            echo "<textarea type='text' name='anvandarKommentar' placeholder='Enter your comment!'' required></textarea>
+            echo "<textarea type='text' name='anvandarKommentar' placeholder='Skriv en kommentar!'' required></textarea>
             <input type='submit' name='skicka_kommentar' value='Skicka kommentar'>
         </form>";
 
-
+        mysqli_close($conn);
         ?>
 
     </body>
-
 </html>
