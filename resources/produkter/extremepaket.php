@@ -15,6 +15,10 @@
   <body>
     <h6 href="index.php"><img name="extreme" class="extreme" src="../../resources/img/Extremepaketet.png">
     <h4>
+    <ul>
+      <li>Namn: Nocco</li><br>
+      <li>Innehåll: BCAA (grenade aminosyror), koffein, grönt te-extrakt och vitaminer. NOCCO BCAA kommer i åtta goda smaker med kolsyra; Miami Strawberry, Blueberry, Passion, Carnival Exotic, Caribbean, Tropical, Persika och Päron. Samtliga NOCCO BCAA är sockerfria. NOCCO BCAA innehåller per portion (330 ml)</li><br>
+      <li>
 
     <form action="kundvagn.php" method="POST">
     Klicka här för att börja prenumenera på Extremepaketet <br>
