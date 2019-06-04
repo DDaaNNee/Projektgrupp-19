@@ -22,10 +22,12 @@
           <li>Antal: 24st</li><br>
         </ul>
 
-        <form action="../support/adderaVara.php" method="POST">
-        Klicka här för att börja prenumenera på Sportpaketet! <br>
-        <input type="submit" name="adderaVara" value="Lägg till i kundvagn" required>
-        </form>
+        <?php if (isset($_SESSION['user']) && $_SESSION['user'] != '') {
+          echo "<form action='../support/adderaVara.php' method='POST'>
+          Klicka här för att börja prenumenera på Extremepaketet <br>
+          <input type='submit' name='adderaVara' value='Lägg till i kundvagn' required>
+          </form>";
+        } ?>
       </html>
       <?php
         $produktsida = basename(__FILE__);

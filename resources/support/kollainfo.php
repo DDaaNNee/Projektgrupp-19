@@ -77,7 +77,7 @@
 
     }
     else {
-      echo "All info: ";
+      
     }
     echo "</h4>";
     echo "</div>";

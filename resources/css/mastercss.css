@@ -62,35 +62,41 @@ input[name=fornamn], input[name=efternamn], input[name=email], input[name=loseno
   width: 80%;
   padding: 10px;
   margin: 5px 0 22px 0;
+  box-sizing: border-box;
 }
 input[name=regbox], input[name=loggain], input[name=skickainfo] {
-  width: 83%;
+  width: 80%;
   padding: 10px;
   margin: 5px 0 22px 0;
+  box-sizing: border-box;
 }
 input[name=anvandarKommentar] {
   width: 95%;
   padding: 10px;
   margin: 5px;
+  box-sizing: border-box;
 }
 input[name=skicka_kommentar], input[name='adderaVara'], input[name='skickaBestallning'], input[name='tomKundvagn'], input[name='tabort_kommentar'] {
   width: 97%;
   padding: 10px;
   margin: 5px;
+  box-sizing: border-box;
 }
 input[name='laggBestallning']{
   width: 97%;
   padding: 10px;
   margin: 5px;
   margin-left: 10px;
+  box-sizing: border-box;
 }
 textarea {
   border: 2px solid #888;
-  width: 96%;
+  width: 97%;
   margin-left: 5px;
   position: relative;
   rows: 6;
   cols: 40;
+  box-sizing: border-box;
 }
 
 .kommentarsForm {

@@ -13,7 +13,7 @@
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/Projektgrupp19/resources/support/dbconnect.php') ?>
 </head>
   <body>
-    <h6 href="index.php"><img name="gaming" src="../../resources/img/CompletedGamerYesboi.png">
+    <h6 href="index.php"><img name="gaming" src="../../resources/img/CompletedGamerYesboi.png"></h6>
       <h4>
         <ul>
           <li>Namn: Monster</li><br>
@@ -21,11 +21,12 @@
           <li>Näringsinnehåll: Monster: Energie	1006 kJ -	237 kcal Kolhydrater	60 g Davon socker	55 g Salt	0,96g</li><br>
           <li>Antal: 24st</li><br>
         </ul>
-
-        <form action="../support/adderaVara.php" method="POST">
-        Klicka här för att börja prenumenera på Sportpaketet! <br>
-        <input type="submit" name="adderaVara" value="Lägg till i kundvagn" required>
-        </form>
+        <?php if (isset($_SESSION['user']) && $_SESSION['user'] != '') {
+          echo "<form action='../support/adderaVara.php' method='POST'>
+          Klicka här för att börja prenumenera på Gamingpaketet! <br>
+          <input type='submit' name='adderaVara' value='Lägg till i kundvagn' required>
+          </form>";
+        } ?>
       </html>
       <?php
         $produktsida = basename(__FILE__);

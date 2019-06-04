@@ -28,7 +28,7 @@
         <input type="text" name="adress" value="" placeholder="Skriv in din adress" required><br>
         <label for="">Telefonnummer: </label><br>
         <input type="tel" name="telefonnummer" value="" placeholder="Skriv in ditt telefonnummer" required pattern="[0][7][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"><br>-->
-        <label for="">Jag accepterar <a href="#" onClick="alert('Genom att klicka i denna ruta ger du, hädanefter 'Användaren', rätten till oss, hädenafter 'Företaget, att lagra den angivna information i en privat databas.')">användarvillkoren</a>: </label>
+        <label for="">Jag accepterar <a href="javascript:alert('Genom att klicka i denna ruta ger du, hädanefter Användaren, rätten till oss, hädanefter Företaget, att lagra den angivna informationen i en privat databas.')">användarvillkoren</a>: </label>
         <input type="checkbox" value="" name="accept" required> <br><br>
         <input type="submit" value="Registrera" name="regbox">
         </h4>

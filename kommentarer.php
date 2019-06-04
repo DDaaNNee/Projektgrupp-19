@@ -18,11 +18,13 @@
           }
 
 
-            if(!empty($_POST['anvandarKommentar'])){
-                $newComments = mysqli_real_escape_string($conn, $_POST['anvandarKommentar']);
+            if (isset($_SESSION['user']) && $_SESSION['user'] != ''){
+
                 $loggedUser = $_SESSION['user'];
                 $produktsida = $_SESSION['produktsida'];
 
+                if (!empty($_POST['anvandarKommentar'])) {
+                $newComments = mysqli_real_escape_string($conn, $_POST['anvandarKommentar']);
                 $query = "INSERT INTO Kommentarer(Anvandare, Kommentar, ProduktNamn) VALUES('$loggedUser', '$newComments', '$produktsida')";
 
                 if(mysqli_query($conn, $query)){
@@ -31,10 +33,15 @@
                 else{
                     echo "Något gick fel: " . mysqli_error($conn);
                 }
+                }
+            }
+            else {
+              echo "<h3><b>Du måste vara inloggad för att kunna kommentera!</b></h3>";
             }
             echo "<textarea type='text' name='anvandarKommentar' placeholder='Skriv en kommentar!'' required></textarea>
             <input type='submit' name='skicka_kommentar' value='Skicka kommentar'>
         </form>";
+
 
         mysqli_close($conn);
         ?>
