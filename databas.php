@@ -14,7 +14,7 @@
   </head>
   <body>
     <h1>Databas<hr></h1>
-    <h5>
+    <h4>
     <?php
 
       $sql = "SELECT ID, Email, Losenord, Fornamn, Efternamn, Telefonnummer, Adress FROM Anvandare";

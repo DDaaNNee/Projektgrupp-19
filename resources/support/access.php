@@ -10,6 +10,8 @@
     <?php
     if (isset($_SESSION['inloggad']) && $_SESSION['user'] == 'admin') {
     }
+    else if (isset($_SESSION['user'])) {
+    }
     else {
       echo "<script> alert('Något gick fel!'); location.href='index.php'";
     }

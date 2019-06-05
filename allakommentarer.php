@@ -20,7 +20,7 @@
 
         echo "<hr>";
         echo "<div id='commentDIV' style='overflow-y: auto; height: 460px;>";
-        echo "<form action='' class='kommentarsForm' method='post'>";
+        echo "<form class='kommentarsForm' method='post'>";
             $commentQuery = "SELECT * FROM Kommentarer";
             $resultingQuery = $conn->query($commentQuery);
             if ($resultingQuery->num_rows > 0) {
@@ -34,7 +34,6 @@
 
             if(!empty($_POST['valdKommentar'])){
                 $val = mysqli_real_escape_string($conn, $_POST['valdKommentar']);
-
                 $query = "DELETE FROM Kommentarer WHERE KommentarsID ='$val'";
 
                 if(mysqli_query($conn, $query)){
@@ -44,10 +43,11 @@
                     echo "Något gick fel: " . mysqli_error($conn);
                 }
             }
-            echo "</div>";
+
             echo "<textarea type='text' name='valdKommentar' placeholder='Skriv in ID:n på kommentaren du vill ta bort!' required></textarea>
-            <input type='submit' name='tabort_kommentar' value='Ta bort kommentar'>
-        </form>";
+            <input type='submit' name='tabort_kommentar' value='Ta bort kommentar'>";
+            echo "</form>";
+            echo "</div>";
             mysqli_close($conn);
         ?>
 
